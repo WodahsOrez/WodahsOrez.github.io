@@ -1,2 +1,2 @@
 # blog
-personal blog websites build on github pages
+personal blog websites powered by github pages
