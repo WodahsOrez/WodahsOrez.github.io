@@ -1,0 +1,1310 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>输入输出流 · 第一本GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="WodahsOrez">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-atom-dark.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="string.html" />
+    
+    
+    <link rel="prev" href="generics.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://###" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Java基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../basic/class.html">
+            
+                <a href="../basic/class.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    类，抽象类，接口，多态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../basic/controlStatement.html">
+            
+                <a href="../basic/controlStatement.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    流程控制语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../basic/datatype.html">
+            
+                <a href="../basic/datatype.html">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    数据类型和运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../basic/function.html">
+            
+                <a href="../basic/function.html">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    方法和数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../basic/innerClass.html">
+            
+                <a href="../basic/innerClass.html">
+            
+                    
+                        <b>1.2.5.</b>
+                    
+                    内部类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../basic/modifier.html">
+            
+                <a href="../basic/modifier.html">
+            
+                    
+                        <b>1.2.6.</b>
+                    
+                    修饰符
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                        <b>1.3.</b>
+                    
+                    Java进阶
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="annotation.html">
+            
+                <a href="annotation.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    注解(annotation)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="collection.html">
+            
+                <a href="collection.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    集合框架和泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="generics.html">
+            
+                <a href="generics.html">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    泛型(generics)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.4" data-path="IO.html">
+            
+                <a href="IO.html">
+            
+                    
+                        <b>1.3.4.</b>
+                    
+                    输入输出流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="string.html">
+            
+                <a href="string.html">
+            
+                    
+                        <b>1.3.5.</b>
+                    
+                    String类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="thread.html">
+            
+                <a href="thread.html">
+            
+                    
+                        <b>1.3.6.</b>
+                    
+                    多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="usefulClass.html">
+            
+                <a href="usefulClass.html">
+            
+                    
+                        <b>1.3.7.</b>
+                    
+                    实用类
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                        <b>1.4.</b>
+                    
+                    JavaWeb
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../javaWeb/ELexperssion.html">
+            
+                <a href="../javaWeb/ELexperssion.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    EL(表达式语言)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../javaWeb/JDBC.html">
+            
+                <a href="../javaWeb/JDBC.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    JDBC(Java数据库连接）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../javaWeb/jsp.html">
+            
+                <a href="../javaWeb/jsp.html">
+            
+                    
+                        <b>1.4.3.</b>
+                    
+                    JSP(Java Server Pages)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../javaWeb/JSTL.html">
+            
+                <a href="../javaWeb/JSTL.html">
+            
+                    
+                        <b>1.4.4.</b>
+                    
+                    JSTL(JSP标准标签库)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../javaWeb/Listener&Fiter.html">
+            
+                <a href="../javaWeb/Listener&Fiter.html">
+            
+                    
+                        <b>1.4.5.</b>
+                    
+                    过滤器和监视器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../javaWeb/servlet.html">
+            
+                <a href="../javaWeb/servlet.html">
+            
+                    
+                        <b>1.4.6.</b>
+                    
+                    servlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../javaWeb/xml.html">
+            
+                <a href="../javaWeb/xml.html">
+            
+                    
+                        <b>1.4.7.</b>
+                    
+                    XML
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                        <b>1.5.</b>
+                    
+                    数据库
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../database/function.html">
+            
+                <a href="../database/function.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    MySQL数据库函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../database/MySQL.html">
+            
+                <a href="../database/MySQL.html">
+            
+                    
+                        <b>1.5.2.</b>
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../database/SQL.html">
+            
+                <a href="../database/SQL.html">
+            
+                    
+                        <b>1.5.3.</b>
+                    
+                    结构化查询语言(SQL)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../database/transaction.html">
+            
+                <a href="../database/transaction.html">
+            
+                    
+                        <b>1.5.4.</b>
+                    
+                    事务Transaction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../database/Untitled.html">
+            
+                <a href="../database/Untitled.html">
+            
+                    
+                        <b>1.5.5.</b>
+                    
+                    #约束,索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                        <b>1.6.</b>
+                    
+                    设计模式
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../DesignPatterns/designPatterns.html">
+            
+                <a href="../DesignPatterns/designPatterns.html">
+            
+                    
+                        <b>1.6.1.</b>
+                    
+                    概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../DesignPatterns/facade.html">
+            
+                <a href="../DesignPatterns/facade.html">
+            
+                    
+                        <b>1.6.2.</b>
+                    
+                    门面模式(facade)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../DesignPatterns/factory.html">
+            
+                <a href="../DesignPatterns/factory.html">
+            
+                    
+                        <b>1.6.3.</b>
+                    
+                    工厂模式(factory)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../DesignPatterns/flyweight.html">
+            
+                <a href="../DesignPatterns/flyweight.html">
+            
+                    
+                        <b>1.6.4.</b>
+                    
+                    享元模式(flyweight)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../DesignPatterns/interpreter.html">
+            
+                <a href="../DesignPatterns/interpreter.html">
+            
+                    
+                        <b>1.6.5.</b>
+                    
+                    解释器模式(interpreter)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../DesignPatterns/iterator.html">
+            
+                <a href="../DesignPatterns/iterator.html">
+            
+                    
+                        <b>1.6.6.</b>
+                    
+                    迭代器模式(iterator)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../DesignPatterns/mediator.html">
+            
+                <a href="../DesignPatterns/mediator.html">
+            
+                    
+                        <b>1.6.7.</b>
+                    
+                    中介者模式(mediator)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../DesignPatterns/memento.html">
+            
+                <a href="../DesignPatterns/memento.html">
+            
+                    
+                        <b>1.6.8.</b>
+                    
+                    备忘录模式(memento)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../DesignPatterns/observer.html">
+            
+                <a href="../DesignPatterns/observer.html">
+            
+                    
+                        <b>1.6.9.</b>
+                    
+                    观察者模式(observer)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../DesignPatterns/prototype.html">
+            
+                <a href="../DesignPatterns/prototype.html">
+            
+                    
+                        <b>1.6.10.</b>
+                    
+                    原型模式(prototype)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="../DesignPatterns/proxy.html">
+            
+                <a href="../DesignPatterns/proxy.html">
+            
+                    
+                        <b>1.6.11.</b>
+                    
+                    代理模式(proxy)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="../DesignPatterns/singleton.html">
+            
+                <a href="../DesignPatterns/singleton.html">
+            
+                    
+                        <b>1.6.12.</b>
+                    
+                    单例模式(singleton)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="../DesignPatterns/state.html">
+            
+                <a href="../DesignPatterns/state.html">
+            
+                    
+                        <b>1.6.13.</b>
+                    
+                    状态模式(state)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="../DesignPatterns/strategy.html">
+            
+                <a href="../DesignPatterns/strategy.html">
+            
+                    
+                        <b>1.6.14.</b>
+                    
+                    策略模式(strategy)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="../DesignPatterns/template.html">
+            
+                <a href="../DesignPatterns/template.html">
+            
+                    
+                        <b>1.6.15.</b>
+                    
+                    模板方法模式(template)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16" data-path="../DesignPatterns/visitor.html">
+            
+                <a href="../DesignPatterns/visitor.html">
+            
+                    
+                        <b>1.6.16.</b>
+                    
+                    访问者模式(visitor)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.17" data-path="../DesignPatterns/adapter.html">
+            
+                <a href="../DesignPatterns/adapter.html">
+            
+                    
+                        <b>1.6.17.</b>
+                    
+                    适配器模式(adapter)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18" data-path="../DesignPatterns/bridge.html">
+            
+                <a href="../DesignPatterns/bridge.html">
+            
+                    
+                        <b>1.6.18.</b>
+                    
+                    桥梁模式(bridge)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.19" data-path="../DesignPatterns/builder.html">
+            
+                <a href="../DesignPatterns/builder.html">
+            
+                    
+                        <b>1.6.19.</b>
+                    
+                    建造者模式(builder)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.20" data-path="../DesignPatterns/chain.html">
+            
+                <a href="../DesignPatterns/chain.html">
+            
+                    
+                        <b>1.6.20.</b>
+                    
+                    责任链模式(Chain of Responsibility)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.21" data-path="../DesignPatterns/command.html">
+            
+                <a href="../DesignPatterns/command.html">
+            
+                    
+                        <b>1.6.21.</b>
+                    
+                    命令模式(command)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22" data-path="../DesignPatterns/composite.html">
+            
+                <a href="../DesignPatterns/composite.html">
+            
+                    
+                        <b>1.6.22.</b>
+                    
+                    组合模式(composite)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.23" data-path="../DesignPatterns/decorator.html">
+            
+                <a href="../DesignPatterns/decorator.html">
+            
+                    
+                        <b>1.6.23.</b>
+                    
+                    装饰模式(decorator)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                        <b>1.7.</b>
+                    
+                    其他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Typora.html">
+            
+                <a href="../Typora.html">
+            
+                    
+                        <b>1.7.1.</b>
+                    
+                    Typora的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../PreviewImg.html">
+            
+                <a href="../PreviewImg.html">
+            
+                    
+                        <b>1.7.2.</b>
+                    
+                    图片预览总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >输入输出流</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6D41;"><b> </b>&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6D41;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5B57;&#x8282;&#x6D41;"><b>1. </b>&#x5B57;&#x8282;&#x6D41;</a></li><ul><li><span class="title-icon "></span><a href="#inputstream&#x62BD;&#x8C61;&#x7C7B;"><b>1.1. </b>InputStream&#x62BD;&#x8C61;&#x7C7B;</a></li><li><span class="title-icon "></span><a href="#outputstream&#x62BD;&#x8C61;&#x7C7B;"><b>1.2. </b>OutputStream&#x62BD;&#x8C61;&#x7C7B;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5B57;&#x7B26;&#x6D41;"><b>2. </b>&#x5B57;&#x7B26;&#x6D41;</a></li><ul><li><span class="title-icon "></span><a href="#writer&#x62BD;&#x8C61;&#x7C7B;"><b>2.1. </b>Writer&#x62BD;&#x8C61;&#x7C7B;</a></li><li><span class="title-icon "></span><a href="#reader&#x62BD;&#x8C61;&#x7C7B;"><b>2.2. </b>reader&#x62BD;&#x8C61;&#x7C7B;</a></li></ul><li><span class="title-icon "></span><a href="#serializable&#x63A5;&#x53E3;"><b>3. </b>Serializable&#x63A5;&#x53E3;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316;"><b>3.1. </b>&#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316;</a></li></ul><li><span class="title-icon "></span><a href="#randomaccessfile&#x7C7B;"><b>4. </b>RandomAccessFile&#x7C7B;</a></li><li><span class="title-icon "></span><a href="#&#x88C5;&#x9970;&#x8BBE;&#x8BA1;&#x601D;&#x60F3;"><b>5. </b>&#x88C5;&#x9970;&#x8BBE;&#x8BA1;&#x601D;&#x60F3;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5C06;iterator&#x548C;enumeration&#x8F6C;&#x6362;"><b>5.1. </b>&#x5C06;Iterator&#x548C;Enumeration&#x8F6C;&#x6362;</a></li></ul></ul></ul></div><a href="#&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6D41;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6D41;"><a name="&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6D41;" class="plugin-anchor" href="#&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6D41;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6D41;" class="anchor-navigation-ex-anchor" href="#&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6D41;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6D41;</h1>
+<h2 id="&#x5B57;&#x8282;&#x6D41;"><a name="&#x5B57;&#x8282;&#x6D41;" class="plugin-anchor" href="#&#x5B57;&#x8282;&#x6D41;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5B57;&#x8282;&#x6D41;" class="anchor-navigation-ex-anchor" href="#&#x5B57;&#x8282;&#x6D41;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x5B57;&#x8282;&#x6D41;</h2>
+<p>&#x7279;&#x70B9;&#xFF1A;&#x6700;&#x5C0F;&#x64CD;&#x4F5C;&#x5355;&#x4F4D;&#x4E3A;&#x5B57;&#x8282;(byte)</p>
+<h3 id="inputstream&#x62BD;&#x8C61;&#x7C7B;"><a name="inputstream&#x62BD;&#x8C61;&#x7C7B;" class="plugin-anchor" href="#inputstream&#x62BD;&#x8C61;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="inputstream&#x62BD;&#x8C61;&#x7C7B;" class="anchor-navigation-ex-anchor" href="#inputstream&#x62BD;&#x8C61;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. InputStream&#x62BD;&#x8C61;&#x7C7B;</h3>
+<p>&#x65B9;&#x6CD5;&#xFF1A;     </p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">int</span> <span class="token function">read</span><span class="token punctuation">(</span><span class="token punctuation">)</span>&#x4ECE;&#x8F93;&#x5165;&#x6D41;&#x8BFB;&#x53D6;&#x4E0B;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#xFF0C;&#x8FD4;&#x56DE;<span class="token number">0</span><span class="token operator">~</span><span class="token number">255</span>&#x7684;&#x503C;
+<span class="token keyword">int</span> <span class="token function">read</span><span class="token punctuation">(</span><span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> b<span class="token punctuation">)</span>&#x4ECE;&#x8F93;&#x5165;&#x6D41;&#x8BFB;&#x53D6;&#x4E00;&#x5806;&#x5B57;&#x8282;&#xFF0C;&#x5B58;&#x50A8;&#x5728;b&#x4E2D;<span class="token punctuation">,</span>&#x8FD4;&#x56DE;&#x503C;&#x4E3A;&#x6570;&#x7EC4;&#x7684;&#x957F;&#x5EA6;&#x3002;
+<span class="token keyword">int</span> <span class="token function">read</span><span class="token punctuation">(</span><span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> b<span class="token punctuation">,</span> <span class="token keyword">int</span> off<span class="token punctuation">,</span> <span class="token keyword">int</span> len<span class="token punctuation">)</span>off&#x4E3A;&#x5F00;&#x59CB;&#x5B58;&#x50A8;&#x5B57;&#x8282;&#x7684;&#x6570;&#x7EC4;&#x4E0B;&#x6807;&#xFF0C;len&#x4E3A;&#x8BFB;&#x5230;&#x7684;&#x5B57;&#x8282;&#x4E2A;&#x6570;&#x3002;
+<span class="token keyword">void</span> <span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span>&#x5173;&#x95ED;&#x6D41;
+<span class="token keyword">int</span> <span class="token function">available</span><span class="token punctuation">(</span><span class="token punctuation">)</span> &#x53EF;&#x4EE5;&#x4ECE;&#x8F93;&#x5165;&#x6D41;&#x4E2D;&#x8BFB;&#x53D6;&#x7684;&#x5269;&#x4F59;&#x5B57;&#x8282;&#x957F;&#x5EA6;&#x3002;<span class="token keyword">while</span><span class="token punctuation">(</span>dis<span class="token punctuation">.</span><span class="token function">available</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&gt;</span><span class="token number">0</span><span class="token punctuation">)</span>
+</code></pre>
+<h4 id="bufferedinputstream&#x7C7B;"><a name="bufferedinputstream&#x7C7B;" class="plugin-anchor" href="#bufferedinputstream&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="bufferedinputstream&#x7C7B;" class="anchor-navigation-ex-anchor" href="#bufferedinputstream&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>BufferedInputStream&#x7C7B;</h4>
+<p>&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF1A;     <code>BufferedInputStream(InputStream in)</code></p>
+<h4 id="fileinputstream&#x7C7B;"><a name="fileinputstream&#x7C7B;" class="plugin-anchor" href="#fileinputstream&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="fileinputstream&#x7C7B;" class="anchor-navigation-ex-anchor" href="#fileinputstream&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>FileInputStream&#x7C7B;</h4>
+<p>&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF1A;<code>FileInputStream(File file)     FileInputStream(String pathname)</code></p>
+<h4 id="sequenceinputstream&#x7C7B;"><a name="sequenceinputstream&#x7C7B;" class="plugin-anchor" href="#sequenceinputstream&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="sequenceinputstream&#x7C7B;" class="anchor-navigation-ex-anchor" href="#sequenceinputstream&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>SequenceInputStream&#x7C7B;</h4>
+<p>&#x7279;&#x70B9;&#xFF1A;&#x6309;&#x987A;&#x5E8F;&#x5408;&#x5E76;&#x82E5;&#x5E72;&#x4E2A;&#x6D41;&#x3002;
+&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token function">SequenceInputStream</span><span class="token punctuation">(</span> Enumeration<span class="token operator">&lt;</span><span class="token operator">?</span> <span class="token keyword">extends</span> <span class="token class-name">InputStream</span><span class="token operator">&gt;</span> e<span class="token punctuation">)</span>
+<span class="token function">SequenceInputStream</span><span class="token punctuation">(</span>InputStream s1<span class="token punctuation">,</span>InputSteam s2<span class="token punctuation">)</span>
+</code></pre>
+<h4 id="objectinputstream&#x7C7B;"><a name="objectinputstream&#x7C7B;" class="plugin-anchor" href="#objectinputstream&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="objectinputstream&#x7C7B;" class="anchor-navigation-ex-anchor" href="#objectinputstream&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>ObjectInputStream&#x7C7B;</h4>
+<p>&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF1A;<code>ObjectInputStream(InputStream in)</code></p>
+<h4 id="pipedinputstream&#x7C7B;"><a name="pipedinputstream&#x7C7B;" class="plugin-anchor" href="#pipedinputstream&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="pipedinputstream&#x7C7B;" class="anchor-navigation-ex-anchor" href="#pipedinputstream&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>PipedInputStream&#x7C7B;</h4>
+<p>&#x7279;&#x70B9;&#xFF1A;&#x914D;&#x5408;PipedOutputStream&#x4F7F;&#x7528;&#xFF0C;&#x907F;&#x514D;&#x4E24;&#x8005;&#x5728;&#x540C;&#x4E00;&#x7EBF;&#x7A0B;&#xFF0C;&#x4F1A;&#x6B7B;&#x9501;&#x3002;
+&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF1A;<code>PipedInputStream(PipedOutputStream src)</code>
+&#x65B9;&#x6CD5;&#xFF1A;     <code>void connect(PipedOutputStream src)</code>  &#x8054;&#x7CFB;&#x4E24;&#x8005;</p>
+<h4 id="datainputstream&#x7C7B;"><a name="datainputstream&#x7C7B;" class="plugin-anchor" href="#datainputstream&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="datainputstream&#x7C7B;" class="anchor-navigation-ex-anchor" href="#datainputstream&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>DataInputStream&#x7C7B;</h4>
+<p>&#x7279;&#x70B9;&#xFF1A;&#x5199;&#x5165;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;
+&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF1A; <code>DataInputStream(InputStream in)</code>
+&#x65B9;&#x6CD5;&#xFF1A;<code>String readUTF()</code>     &#x4FEE;&#x6539;&#x7248;UTF-8&#x683C;&#x5F0F;&#x8BFB;&#x53D6;</p>
+<h3 id="outputstream&#x62BD;&#x8C61;&#x7C7B;"><a name="outputstream&#x62BD;&#x8C61;&#x7C7B;" class="plugin-anchor" href="#outputstream&#x62BD;&#x8C61;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="outputstream&#x62BD;&#x8C61;&#x7C7B;" class="anchor-navigation-ex-anchor" href="#outputstream&#x62BD;&#x8C61;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. OutputStream&#x62BD;&#x8C61;&#x7C7B;</h3>
+<p>&#x65B9;&#x6CD5;&#xFF1A;     </p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">void</span> <span class="token function">write</span><span class="token punctuation">(</span><span class="token keyword">int</span> c<span class="token punctuation">)</span>
+<span class="token keyword">void</span> <span class="token function">write</span><span class="token punctuation">(</span><span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> buf<span class="token punctuation">)</span>
+<span class="token keyword">void</span> <span class="token function">write</span><span class="token punctuation">(</span><span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> b<span class="token punctuation">,</span> <span class="token keyword">int</span> of<span class="token punctuation">,</span> <span class="token keyword">int</span> len<span class="token punctuation">)</span>
+<span class="token keyword">void</span> <span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">void</span> <span class="token function">flush</span><span class="token punctuation">(</span><span class="token punctuation">)</span>&#x5F3A;&#x5236;&#x628A;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x6570;&#x636E;&#x5199;&#x5230;&#x8F93;&#x51FA;&#x6D41;&#x4E2D;<span class="token punctuation">,</span>&#x5199;&#x5165;&#x5F97;&#x65F6;&#x5019;&#x53EA;&#x662F;&#x628A;&#x6570;&#x636E;&#x5199;&#x5165;&#x5230;&#x5F53;&#x524D;&#x6D41;&#x7C7B;&#x7684;&#x7F13;&#x51B2;&#x533A;&#x5185;<span class="token punctuation">,</span>&#x800C;&#x6CA1;&#x6709;&#x5199;&#x5165;&#x5230;&#x6D41;&#x6240;&#x6307;&#x5411;&#x7684;&#x6587;&#x4EF6;&#x6216;&#x8005;&#x5176;&#x4ED6;&#x6D41;&#x4E2D;<span class="token punctuation">,</span>&#x6240;&#x4EE5;&#x9700;&#x8981;flush&#x4EE5;&#x5199;&#x5165;&#x5230;&#x76EE;&#x6807;&#x6E90;
+</code></pre>
+<h4 id="fileoutputstream&#x7C7B;"><a name="fileoutputstream&#x7C7B;" class="plugin-anchor" href="#fileoutputstream&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="fileoutputstream&#x7C7B;" class="anchor-navigation-ex-anchor" href="#fileoutputstream&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>FileOutputStream&#x7C7B;</h4>
+<p>&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF1A;     </p>
+<pre class="language-"><code class="lang-java"><span class="token function">FileOutputStream</span><span class="token punctuation">(</span>File file<span class="token punctuation">)</span>
+<span class="token function">FileOutputStream</span><span class="token punctuation">(</span>String name<span class="token punctuation">)</span>
+<span class="token function">FileOutputStream</span><span class="token punctuation">(</span>String name<span class="token punctuation">,</span> <span class="token keyword">boolean</span> append<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x524D;&#x4E24;&#x79CD;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x5728;&#x5411;&#x6587;&#x4EF6;&#x5199;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5C06;&#x8986;&#x76D6;&#x6587;&#x4EF6;&#x4E2D;&#x539F;&#x6709;&#x7684;&#x5185;&#x5BB9;&#xFF0C;FileOutputStream&#x5B9E;&#x4F8B;&#x65F6;&#xFF0C;
+&#x5982;&#x679C;&#x6587;&#x4EF6;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x7A7A;&#x7684;&#x6587;&#x4EF6;&#x3002;&#x5982;&#x679C;&#x8DEF;&#x5F84;&#x4E0D;&#x5B58;&#x5728;&#x5219;&#x62A5;&#x5F02;&#x5E38;</p>
+<h4 id="printstream&#x7C7B;"><a name="printstream&#x7C7B;" class="plugin-anchor" href="#printstream&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="printstream&#x7C7B;" class="anchor-navigation-ex-anchor" href="#printstream&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>PrintStream&#x7C7B;</h4>
+<p>&#x7279;&#x70B9;&#xFF1A;&#x6C38;&#x8FDC;&#x4E0D;&#x4F1A;&#x629B;&#x51FA;IOException
+&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token function">PrintStream</span><span class="token punctuation">(</span>File file<span class="token punctuation">)</span>
+<span class="token function">PrintStream</span><span class="token punctuation">(</span>OutputStream out<span class="token punctuation">)</span>
+<span class="token function">PrintStream</span><span class="token punctuation">(</span>String fileName<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">void</span> <span class="token function">print</span><span class="token punctuation">(</span>&#x57FA;&#x7840;&#x6570;&#x636E;&#x7C7B;&#x578B;<span class="token punctuation">)</span>     
+<span class="token comment">// &#x5305;&#x62EC;&#xFF1A;boolean,char,char[],double,float,int,long,String,Object,&#x4FDD;&#x6301;&#x6570;&#x636E;&#x7684;&#x8868;&#x73B0;&#x5F62;&#x5F0F;&#x3002;</span>
+<span class="token keyword">void</span> <span class="token function">write</span><span class="token punctuation">(</span><span class="token keyword">int</span> b<span class="token punctuation">)</span>     <span class="token comment">//&#x5199;&#x5165;&#x5B57;&#x8282;&#x7801;&#x4E3A;b&#x7684;&#x503C;&#xFF0C;&#x53EA;&#x4FDD;&#x7559;int&#x7684;&#x540E;8&#x4F4D;&#x3002;</span>
+</code></pre>
+<h4 id="bufferedoutputstream&#x7C7B;"><a name="bufferedoutputstream&#x7C7B;" class="plugin-anchor" href="#bufferedoutputstream&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="bufferedoutputstream&#x7C7B;" class="anchor-navigation-ex-anchor" href="#bufferedoutputstream&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>BufferedOutputStream&#x7C7B;</h4>
+<p>&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF1A;    <code>BufferedOutputStream(OutputStream out)</code>
+&#x65B9;&#x6CD5;&#xFF1A;    <code>void flush()</code></p>
+<h4 id="objectoutputstream&#x7C7B;"><a name="objectoutputstream&#x7C7B;" class="plugin-anchor" href="#objectoutputstream&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="objectoutputstream&#x7C7B;" class="anchor-navigation-ex-anchor" href="#objectoutputstream&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>ObjectOutputStream&#x7C7B;</h4>
+<p>&#x6784;&#x9020;&#xFF1A;<code>ObjectOutputStream(OutputStream)</code>
+&#x65B9;&#x6CD5;&#xFF1A;<code>void writeObject(Object obj)</code>    &#x5BF9;&#x8C61;&#x5FC5;&#x987B;&#x5B9E;&#x73B0;Serializable&#x63A5;&#x53E3;</p>
+<h4 id="pipedoutputstraem&#x7C7B;"><a name="pipedoutputstraem&#x7C7B;" class="plugin-anchor" href="#pipedoutputstraem&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="pipedoutputstraem&#x7C7B;" class="anchor-navigation-ex-anchor" href="#pipedoutputstraem&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>PipedOutputStraem&#x7C7B;</h4>
+<p>&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF1A;<code>PipedOutputStream(PipedInputStream snk)</code>
+&#x65B9;&#x6CD5;&#xFF1A;     <code>void connect(PipedInputStream snk)</code></p>
+<h4 id="dataoutputstream&#x7C7B;"><a name="dataoutputstream&#x7C7B;" class="plugin-anchor" href="#dataoutputstream&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="dataoutputstream&#x7C7B;" class="anchor-navigation-ex-anchor" href="#dataoutputstream&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>DataOutputStream&#x7C7B;</h4>
+<p>&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF1A;<code>DataOutputStream(OutputStream out)</code>
+&#x65B9;&#x6CD5;&#xFF1A;<code>void writeUTF(String str)</code>    &#x4FEE;&#x6539;&#x7248;UTF-8&#x683C;&#x5F0F;&#x5199;&#x5165;</p>
+<h2 id="&#x5B57;&#x7B26;&#x6D41;"><a name="&#x5B57;&#x7B26;&#x6D41;" class="plugin-anchor" href="#&#x5B57;&#x7B26;&#x6D41;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5B57;&#x7B26;&#x6D41;" class="anchor-navigation-ex-anchor" href="#&#x5B57;&#x7B26;&#x6D41;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x5B57;&#x7B26;&#x6D41;</h2>
+<p>&#x7279;&#x70B9;&#xFF1A;&#x6700;&#x5C0F;&#x5904;&#x7406;&#x5355;&#x5143;&#x4E3A;2&#x4E2A;&#x5B57;&#x8282;&#x7684;Unicode&#x5B57;&#x7B26;&#x3002;&#x6709;&#x7F13;&#x51B2;&#x533A;&#x3002;&#x5904;&#x7406;&#x6587;&#x5B57;&#x610F;&#x5916;&#x7684;&#x6570;&#x636E;&#x4F1A;&#x51FA;&#x9519;&#x3002;</p>
+<h3 id="writer&#x62BD;&#x8C61;&#x7C7B;"><a name="writer&#x62BD;&#x8C61;&#x7C7B;" class="plugin-anchor" href="#writer&#x62BD;&#x8C61;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="writer&#x62BD;&#x8C61;&#x7C7B;" class="anchor-navigation-ex-anchor" href="#writer&#x62BD;&#x8C61;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. Writer&#x62BD;&#x8C61;&#x7C7B;</h3>
+<p>&#x65B9;&#x6CD5;&#xFF1A;     </p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">flush</span><span class="token punctuation">(</span><span class="token punctuation">)</span>     &#x5237;&#x65B0;&#x6D41;&#xFF0C;&#x628A;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x5185;&#x5BB9;&#x5199;&#x5165;&#x5230;&#x76EE;&#x6807;&#x6587;&#x4EF6;
+<span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span>     &#x5173;&#x95ED;&#x6D41;&#xFF0C;&#x4F1A;&#x5148;&#x6267;&#x884C;flush&#x540E;&#x5173;&#x95ED;&#x6D41;&#x3002;
+<span class="token keyword">void</span> <span class="token function">writer</span><span class="token punctuation">(</span><span class="token keyword">char</span><span class="token punctuation">[</span><span class="token punctuation">]</span> cbuf<span class="token punctuation">)</span>
+<span class="token keyword">void</span> <span class="token function">write</span><span class="token punctuation">(</span><span class="token keyword">char</span><span class="token punctuation">[</span><span class="token punctuation">]</span> cbuf<span class="token punctuation">,</span> <span class="token keyword">int</span> off<span class="token punctuation">,</span> <span class="token keyword">int</span> len<span class="token punctuation">)</span>      off&#x4E3A;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#xFF0C;len&#x4E3A;&#x957F;&#x5EA6;&#x3002;
+<span class="token keyword">void</span> <span class="token function">write</span><span class="token punctuation">(</span><span class="token keyword">int</span> c<span class="token punctuation">)</span>     &#x5199;&#x5165;&#x7F16;&#x53F7;&#x4E3A;c&#x7684;&#x5B57;&#x7B26;&#x3002;
+<span class="token keyword">void</span> <span class="token function">write</span><span class="token punctuation">(</span>String str<span class="token punctuation">)</span>
+<span class="token keyword">void</span> <span class="token function">write</span><span class="token punctuation">(</span>String str<span class="token punctuation">,</span> <span class="token keyword">int</span> off<span class="token punctuation">,</span> <span class="token keyword">int</span> len<span class="token punctuation">)</span>     &#x5199;&#x5165;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;off&#x4E3A;&#x8D77;&#x59CB;&#x4E0B;&#x6807;&#xFF0C;len&#x4E3A;&#x957F;&#x5EA6;&#x3002;
+</code></pre>
+<h4 id="bufferedwriter&#x7C7B;"><a name="bufferedwriter&#x7C7B;" class="plugin-anchor" href="#bufferedwriter&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="bufferedwriter&#x7C7B;" class="anchor-navigation-ex-anchor" href="#bufferedwriter&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>BufferedWriter&#x7C7B;</h4>
+<p>&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF1A;<code>BufferedWriter(Write out)</code>   &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7F13;&#x51B2;&#x8F93;&#x5165;&#x6D41;&#xFF0C;&#x6548;&#x7387;&#x9AD8;
+&#x65B9;&#x6CD5;&#xFF1A;     </p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">void</span> <span class="token function">newLine</span><span class="token punctuation">(</span><span class="token punctuation">)</span>     &#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x4F9D;&#x636E;&#x7CFB;&#x7EDF;&#x7684;&#x6362;&#x884C;
+<span class="token keyword">void</span> <span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span>     Writer&#x4E5F;&#x4F1A;&#x88AB;&#x5173;&#x95ED;
+</code></pre>
+<h4 id="outputstreamwriter&#x7C7B;"><a name="outputstreamwriter&#x7C7B;" class="plugin-anchor" href="#outputstreamwriter&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="outputstreamwriter&#x7C7B;" class="anchor-navigation-ex-anchor" href="#outputstreamwriter&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>OutputStreamWriter&#x7C7B;</h4>
+<p>&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF1A;     </p>
+<pre class="language-"><code class="lang-java"><span class="token function">OutputStreamWriter</span><span class="token punctuation">(</span>OutputStream out<span class="token punctuation">)</span>
+<span class="token function">OutputStreamReader</span><span class="token punctuation">(</span>OutputStream in<span class="token punctuation">,</span> Charset cs<span class="token punctuation">)</span>     Charset&#x4E3A;&#x7F16;&#x7801;&#x8868;<span class="token punctuation">,</span>&#x5982;<span class="token string">&quot;GBK&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;gbk&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;utf-8&quot;</span>
+</code></pre>
+<h4 id="filewriter&#x7C7B;"><a name="filewriter&#x7C7B;" class="plugin-anchor" href="#filewriter&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="filewriter&#x7C7B;" class="anchor-navigation-ex-anchor" href="#filewriter&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>FileWriter&#x7C7B;</h4>
+<p>&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF1A;     </p>
+<pre class="language-"><code class="lang-java"><span class="token function">FileWriter</span><span class="token punctuation">(</span>File file<span class="token punctuation">)</span>
+<span class="token function">FileWriter</span><span class="token punctuation">(</span>String fileName<span class="token punctuation">)</span>     &#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728;&#x5219;&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#xFF0C;&#x5982;&#x679C;&#x5B58;&#x5728;&#x5219;&#x4F1A;&#x88AB;&#x8986;&#x76D6;&#x3002;
+<span class="token function">FileWriter</span><span class="token punctuation">(</span>String fileName<span class="token punctuation">,</span> <span class="token keyword">boolean</span> append<span class="token punctuation">)</span>     append&#x4E3A;<span class="token boolean">true</span>&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x7EED;&#x5199;&#x3002;
+</code></pre>
+<h4 id="printwriter&#x7C7B;"><a name="printwriter&#x7C7B;" class="plugin-anchor" href="#printwriter&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="printwriter&#x7C7B;" class="anchor-navigation-ex-anchor" href="#printwriter&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>PrintWriter&#x7C7B;</h4>
+<p>&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF1A;     </p>
+<pre class="language-"><code class="lang-java"><span class="token function">PrintWriter</span><span class="token punctuation">(</span>File file<span class="token punctuation">)</span>
+<span class="token function">PrintWriter</span><span class="token punctuation">(</span>OutputStream out<span class="token punctuation">)</span>     &#x53EF;&#x9009;&#x9879;<span class="token keyword">boolean</span> autoFlush<span class="token punctuation">.</span>printf<span class="token punctuation">,</span>println<span class="token punctuation">,</span>format&#x65B9;&#x6CD5;&#x5C06;&#x81EA;&#x52A8;&#x5237;&#x65B0;
+<span class="token function">PrintWriter</span><span class="token punctuation">(</span>String fileName<span class="token punctuation">)</span>
+<span class="token function">PrintWriter</span><span class="token punctuation">(</span>Writer out<span class="token punctuation">)</span>     &#x53EF;&#x9009;&#x9879;<span class="token keyword">boolean</span> autoFlush<span class="token punctuation">.</span>printf<span class="token punctuation">,</span>println<span class="token punctuation">,</span>format&#x65B9;&#x6CD5;&#x5C06;&#x81EA;&#x52A8;&#x5237;&#x65B0;
+</code></pre>
+<h3 id="reader&#x62BD;&#x8C61;&#x7C7B;"><a name="reader&#x62BD;&#x8C61;&#x7C7B;" class="plugin-anchor" href="#reader&#x62BD;&#x8C61;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="reader&#x62BD;&#x8C61;&#x7C7B;" class="anchor-navigation-ex-anchor" href="#reader&#x62BD;&#x8C61;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. reader&#x62BD;&#x8C61;&#x7C7B;</h3>
+<p>&#x65B9;&#x6CD5;&#xFF1A;     </p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">int</span> <span class="token function">read</span><span class="token punctuation">(</span><span class="token punctuation">)</span> &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x7684;&#x53F7;&#x7801;<span class="token number">0</span><span class="token operator">~</span><span class="token number">65535</span>&#xFF0C;&#x5F53;&#x5230;&#x8FBE;&#x672B;&#x5C3E;&#x65F6;&#x8FD4;&#x56DE;<span class="token operator">-</span><span class="token number">1</span>
+<span class="token keyword">int</span> <span class="token function">read</span><span class="token punctuation">(</span><span class="token keyword">char</span><span class="token punctuation">[</span><span class="token punctuation">]</span> cbuf<span class="token punctuation">)</span>     &#x8FD4;&#x56DE;&#x8BFB;&#x53D6;&#x7684;&#x4E2A;&#x6570;&#xFF0C;&#x6CA1;&#x6709;&#x8BFB;&#x53D6;&#x5230;&#x6216;&#x672B;&#x5C3E;&#x5219;&#x8FD4;&#x56DE;<span class="token operator">-</span><span class="token number">1</span>
+<span class="token comment">// &#x4F8B;&#xFF1A;&#x6761;&#x4EF6;:&#x6587;&#x4EF6;&#x4E3A;&quot;abcde&quot;,buf&#x4E3A;char[3].</span>
+<span class="token keyword">int</span> num <span class="token operator">=</span> fr<span class="token punctuation">.</span><span class="token function">read</span><span class="token punctuation">(</span>buf<span class="token punctuation">)</span><span class="token punctuation">;</span>
+System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>num <span class="token operator">+</span> <span class="token string">&quot;:&quot;</span><span class="token operator">+</span><span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span>buf<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">:</span>      <span class="token comment">//&#x8F93;&#x51FA;3:abc   &#x8BFB;&#x53D6;&#x4E86;&#x4E09;&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x5206;&#x522B;&#x5199;&#x5165;buf&#x6570;&#x7EC4;</span>
+<span class="token keyword">int</span> num1 <span class="token operator">=</span> fr<span class="token punctuation">.</span><span class="token function">read</span><span class="token punctuation">(</span>buf<span class="token punctuation">)</span><span class="token punctuation">;</span>
+System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>num1 <span class="token operator">+</span> <span class="token string">&quot;:&quot;</span><span class="token operator">+</span><span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span>buf<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">:</span>  <span class="token comment">//&#x8F93;&#x51FA;2:dec &#x8BFB;&#x53D6;&#x4E86;&#x4E24;&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x8986;&#x76D6;&#x4E86;buf[0]&#x548C;buf[1]</span>
+<span class="token keyword">int</span> num2 <span class="token operator">=</span> fr<span class="token punctuation">.</span><span class="token function">read</span><span class="token punctuation">(</span>buf<span class="token punctuation">)</span><span class="token punctuation">;</span>
+System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>num2 <span class="token operator">+</span> <span class="token string">&quot;:&quot;</span><span class="token operator">+</span><span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span>buf<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">:</span>     <span class="token comment">//&#x8F93;&#x51FA;-1:dec  &#x6CA1;&#x8BFB;&#x53D6;&#x5230;&#x5B57;&#x7B26;&#xFF0C;&#x8FD4;&#x56DE;-1</span>
+</code></pre>
+<h4 id="bufferedreader&#x7C7B;"><a name="bufferedreader&#x7C7B;" class="plugin-anchor" href="#bufferedreader&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="bufferedreader&#x7C7B;" class="anchor-navigation-ex-anchor" href="#bufferedreader&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>BufferedReader&#x7C7B;</h4>
+<p>&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF1A;     <code>BufferedReader(Reader in)</code>
+&#x65B9;&#x6CD5;&#xFF1A;     <code>String readLine()</code>&#x8BFB;&#x53D6;&#x4E00;&#x884C;&#x6587;&#x672C;&#xFF0C;&#x4E0D;&#x5305;&#x62EC;&#x6362;&#x884C;&#x7B26;&#x3002;&#x6CA1;&#x6709;&#x4E0B;&#x4E00;&#x884C;&#x8FD4;&#x56DE;null,&#x82E5;&#x6CA1;&#x6709;&#x6362;&#x884C;&#x7B26;&#x5219;&#x4F1A;&#x963B;&#x585E;</p>
+<h4 id="inputstreamreader&#x7C7B;"><a name="inputstreamreader&#x7C7B;" class="plugin-anchor" href="#inputstreamreader&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="inputstreamreader&#x7C7B;" class="anchor-navigation-ex-anchor" href="#inputstreamreader&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>InputStreamReader&#x7C7B;</h4>
+<p>&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF1A;     </p>
+<pre class="language-"><code class="lang-java"><span class="token function">InputStreamReader</span><span class="token punctuation">(</span>InputStream in<span class="token punctuation">)</span>
+<span class="token function">InputStreamReader</span><span class="token punctuation">(</span>InputStream in<span class="token punctuation">,</span> Charset cs<span class="token punctuation">)</span>     Charset&#x4E3A;&#x7F16;&#x7801;&#x8868;<span class="token punctuation">,</span>&#x5982;<span class="token string">&quot;GBK&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;gbk&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;utf-8&quot;</span>
+</code></pre>
+<h4 id="filereader&#x7C7B;"><a name="filereader&#x7C7B;" class="plugin-anchor" href="#filereader&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="filereader&#x7C7B;" class="anchor-navigation-ex-anchor" href="#filereader&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>FileReader&#x7C7B;</h4>
+<p>&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF1A;     </p>
+<pre class="language-"><code class="lang-java"><span class="token function">FileReader</span><span class="token punctuation">(</span>File file<span class="token punctuation">)</span>     &#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x629B;&#x51FA;&#x5F02;&#x5E38;
+<span class="token function">FileReader</span><span class="token punctuation">(</span>String fileName<span class="token punctuation">)</span>
+</code></pre>
+<h4 id="linenumberreader&#x7C7B;"><a name="linenumberreader&#x7C7B;" class="plugin-anchor" href="#linenumberreader&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="linenumberreader&#x7C7B;" class="anchor-navigation-ex-anchor" href="#linenumberreader&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>LineNumberReader&#x7C7B;</h4>
+<p>&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF1A; <code>LineNumberReader(Reader in)</code>
+&#x65B9;&#x6CD5;&#xFF1A;     </p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">int</span> <span class="token function">getLineNumber</span><span class="token punctuation">(</span><span class="token punctuation">)</span>     &#x83B7;&#x53D6;&#x884C;&#x53F7;<span class="token operator">++</span>
+<span class="token keyword">void</span> <span class="token function">setLineNumber</span><span class="token punctuation">(</span><span class="token keyword">int</span> lineNumber<span class="token punctuation">)</span>     &#x8BBE;&#x7F6E;&#x884C;&#x53F7;
+String <span class="token function">readLine</span><span class="token punctuation">(</span><span class="token punctuation">)</span>     &#x8BFB;&#x4E00;&#x884C;
+</code></pre>
+<h2 id="serializable&#x63A5;&#x53E3;"><a name="serializable&#x63A5;&#x53E3;" class="plugin-anchor" href="#serializable&#x63A5;&#x53E3;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="serializable&#x63A5;&#x53E3;" class="anchor-navigation-ex-anchor" href="#serializable&#x63A5;&#x53E3;"><i class="fa fa-link" aria-hidden="true"></i></a>3. Serializable&#x63A5;&#x53E3;</h2>
+<p>&#x9ED8;&#x8BA4;&#x4F1A;&#x8BA1;&#x7B97;&#x51FA;&#x4E00;&#x4E2A;&#x5E8F;&#x53F7;&#x7528;&#x4EE5;&#x5224;&#x65AD;&#x5E8F;&#x5217;&#x5316;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x65F6;&#x5BF9;&#x8C61;&#x662F;&#x5426;&#x6709;&#x6539;&#x53D8;&#x3002;
+&#x5EFA;&#x8BAE;&#x663E;&#x5F0F;&#x58F0;&#x660E;&#x4E00;&#x4E2A;Static final long&#x7684;&#x5E8F;&#x5217;&#x53F7;&#xFF0C;&#x4EE5;&#x907F;&#x514D;&#x9ED8;&#x8BA4;&#x751F;&#x6210;&#x9AD8;&#x654F;&#x611F;&#x6027;&#x5E26;&#x6765;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<h3 id="&#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316;"><a name="&#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316;" class="plugin-anchor" href="#&#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316;" class="anchor-navigation-ex-anchor" href="#&#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. &#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316;</h3>
+<p>&#x628A;&#x5BF9;&#x8C61;&#x8F6C;&#x6362;&#x4E3A;&#x5B57;&#x8282;&#x5E8F;&#x5217;&#x7684;&#x8FC7;&#x7A0B;&#x79F0;&#x4E3A;&#x5BF9;&#x8C61;&#x7684;&#x5E8F;&#x5217;&#x5316;&#x3002;
+&#x628A;&#x5B57;&#x8282;&#x5E8F;&#x5217;&#x6062;&#x590D;&#x4E3A;&#x5BF9;&#x8C61;&#x7684;&#x8FC7;&#x7A0B;&#x79F0;&#x4E3A;&#x5BF9;&#x8C61;&#x7684;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x3002;</p>
+<h2 id="randomaccessfile&#x7C7B;"><a name="randomaccessfile&#x7C7B;" class="plugin-anchor" href="#randomaccessfile&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="randomaccessfile&#x7C7B;" class="anchor-navigation-ex-anchor" href="#randomaccessfile&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>4. RandomAccessFile&#x7C7B;</h2>
+<p>&#x7279;&#x70B9;&#xFF1A;&#x53EA;&#x80FD;&#x5BF9;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x3002;&#x7EFC;&#x5408;&#x4E86;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x6D41;&#x3002;&#x5982;&#x679C;&#x6587;&#x4EF6;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x521B;&#x5EFA;&#xFF0C;&#x5982;&#x679C;&#x5B58;&#x5728;&#xFF0C;&#x4E0D;&#x521B;&#x5EFA;&#xFF0C;&#x4F7F;&#x7528;&#x539F;&#x6587;&#x4EF6;&#x3002;&#x7528;&#x4E8E;&#x591A;&#x7EBF;&#x7A0B;&#x8F93;&#x51FA;&#x3002;
+&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token function">RandomAccessFile</span><span class="token punctuation">(</span>File file<span class="token punctuation">,</span>String mode<span class="token punctuation">)</span> mode&#x4E3A;r&#x53EA;&#x8BFB;&#xFF0C;rw&#x8BFB;&#x5199;
+<span class="token function">RandomAccessFile</span><span class="token punctuation">(</span>String name <span class="token punctuation">,</span>String mode<span class="token punctuation">)</span> &#x4EE5;name&#x4E3A;&#x8DEF;&#x5F84;&#x7684;&#x6587;&#x4EF6;&#x540D;
+</code></pre>
+<p>&#x65B9;&#x6CD5;&#xFF1A;     </p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">long</span> <span class="token function">getFilePointer</span><span class="token punctuation">(</span><span class="token punctuation">)</span>     &#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x6307;&#x9488;&#x7684;&#x4F4D;&#x7F6E;
+<span class="token keyword">void</span> <span class="token function">seek</span><span class="token punctuation">(</span><span class="token keyword">long</span> pos<span class="token punctuation">)</span>     &#x8BBE;&#x7F6E;&#x6307;&#x9488;&#x7684;&#x4F4D;&#x7F6E;
+</code></pre>
+<h2 id="&#x88C5;&#x9970;&#x8BBE;&#x8BA1;&#x601D;&#x60F3;"><a name="&#x88C5;&#x9970;&#x8BBE;&#x8BA1;&#x601D;&#x60F3;" class="plugin-anchor" href="#&#x88C5;&#x9970;&#x8BBE;&#x8BA1;&#x601D;&#x60F3;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x88C5;&#x9970;&#x8BBE;&#x8BA1;&#x601D;&#x60F3;" class="anchor-navigation-ex-anchor" href="#&#x88C5;&#x9970;&#x8BBE;&#x8BA1;&#x601D;&#x60F3;"><i class="fa fa-link" aria-hidden="true"></i></a>5. &#x88C5;&#x9970;&#x8BBE;&#x8BA1;&#x601D;&#x60F3;</h2>
+<p>BufferedWriter&#x5C31;&#x662F;&#x4E00;&#x79CD;&#x88C5;&#x9970;&#x7C7B;&#xFF0C;&#x8FD0;&#x7528;&#x7684;&#x662F;&#x88C5;&#x9970;&#x8BBE;&#x8BA1;&#xFF0C;&#x4E0E;&#x7EE7;&#x627F;&#x7684;&#x5DEE;&#x522B;&#x5728;&#x4E8E;&#xFF0C;&#x5BF9;&#x4E8E;&#x540C;&#x4E00;&#x4E2A;&#x529F;&#x80FD;&#x7684;&#x62D3;&#x5C55;&#xFF0C;&#x7EE7;&#x627F;&#x9700;&#x8981;&#x5BF9;&#x6BCF;&#x4E2A;&#x5B50;&#x7C7B;&#x90FD;&#x8FDB;&#x884C;&#x7EE7;&#x627F;&#xFF0C;&#x4F1A;&#x4F7F;&#x4F53;&#x7CFB;&#x8D8A;&#x6765;&#x8D8A;&#x81C3;&#x80BF;&#x3002;&#x800C;&#x88C5;&#x9970;&#x53EA;&#x9700;&#x8981;&#x5BF9;&#x7236;&#x7C7B;&#x6216;&#x63A5;&#x53E3;&#x8FDB;&#x884C;&#x5173;&#x8054;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5E94;&#x7528;&#x4E8E;&#x6240;&#x6709;&#x5B50;&#x7C7B;&#xFF0C;&#x66F4;&#x7075;&#x6D3B;&#x3002;
+&#x603B;&#x7ED3;&#xFF1A;&#x88C5;&#x9970;&#x7C7B;&#x6BD4;&#x7EE7;&#x627F;&#x7075;&#x6D3B;&#x3002;&#x88C5;&#x9970;&#x7C7B;&#x548C;&#x88AB;&#x88C5;&#x9970;&#x7C7B;&#x90FD;&#x5FC5;&#x987B;&#x6240;&#x5C5E;&#x540C;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#x6216;&#x7236;&#x7C7B;&#x3002;
+&#x963B;&#x585E;&#x5F0F;&#x65B9;&#x6CD5;&#xFF1A;&#x5FC5;&#x987B;&#x7B49;&#x5F85;&#x8F93;&#x5165;&#x6570;&#x636E;&#x53EF;&#x7528;&#x6216;&#x8005;&#x68C0;&#x6D4B;&#x5230;&#x8F93;&#x5165;&#x7ED3;&#x675F;&#x6216;&#x8005;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#xFF0C;&#x5426;&#x5219;&#x7A0B;&#x5E8F;&#x4F1A;&#x4E00;&#x76F4;&#x505C;&#x7559;&#x5728;&#x8BE5;&#x8BED;&#x53E5;&#x4E0A;&#xFF0C;&#x4E0D;&#x4F1A;&#x6267;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x8BED;&#x53E5;&#x3002;</p>
+<h3 id="&#x5C06;iterator&#x548C;enumeration&#x8F6C;&#x6362;"><a name="&#x5C06;iterator&#x548C;enumeration&#x8F6C;&#x6362;" class="plugin-anchor" href="#&#x5C06;iterator&#x548C;enumeration&#x8F6C;&#x6362;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5C06;iterator&#x548C;enumeration&#x8F6C;&#x6362;" class="anchor-navigation-ex-anchor" href="#&#x5C06;iterator&#x548C;enumeration&#x8F6C;&#x6362;"><i class="fa fa-link" aria-hidden="true"></i></a>5.1. &#x5C06;Iterator&#x548C;Enumeration&#x8F6C;&#x6362;</h3>
+<pre class="language-"><code class="lang-java">ArrayList<span class="token generics function"><span class="token punctuation">&lt;</span>FileInputStream<span class="token punctuation">&gt;</span></span> a1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics function"><span class="token punctuation">&lt;</span>FileInputStream<span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+Iterator it<span class="token generics function"><span class="token punctuation">&lt;</span>FileInputStream<span class="token punctuation">&gt;</span></span> <span class="token operator">=</span> a1<span class="token punctuation">.</span><span class="token function">iterator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//&#x533F;&#x540D;&#x7C7B;&#x91CD;&#x5199;&#x65B9;&#x6CD5;&#x3002;&#x7528;Iterator&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x5B9E;&#x73B0;&#x3002;</span>
+Enumeration<span class="token generics function"><span class="token punctuation">&lt;</span>FileInputStream<span class="token punctuation">&gt;</span></span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Enumeration</span><span class="token generics function"><span class="token punctuation">&lt;</span>FileInputStream<span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">hasMoreElements</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> it<span class="token punctuation">.</span><span class="token function">hasNext</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> FileInputStream <span class="token function">nextElement</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> it<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span> <span class="token punctuation">;</span>
+</code></pre>
+<p>Java 8&#x66F4;&#x52A0;&#x667A;&#x80FD;&#xFF1A;&#x5982;&#x679C;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x88AB;&#x533F;&#x540D;&#x5185;&#x90E8;&#x7C7B;&#x8BBF;&#x95EE;&#xFF0C;&#x90A3;&#x4E48;&#x8BE5;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x76F8;&#x5F53;&#x4E8E;&#x81EA;&#x52A8;&#x4F7F;&#x7528;&#x4E86;final&#x4FEE;&#x9970;&#x3002;
+&#x6D41;&#x7684;read&#x65B9;&#x6CD5;&#x90FD;&#x662F;&#x963B;&#x585E;&#x7684;:&#x5373;&#x6D41;&#x5185;&#x6CA1;&#x6709;&#x5185;&#x5BB9;&#x65F6;&#x4F1A;&#x4E00;&#x76F4;&#x7B49;&#x5F85;.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="generics.html" class="navigation navigation-prev " aria-label="Previous page: 泛型(generics)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="string.html" class="navigation navigation-next " aria-label="Next page: String类">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"输入输出流","level":"1.3.4","depth":2,"next":{"title":"String类","level":"1.3.5","depth":2,"path":"advanced/string.md","ref":"advanced/string.md","articles":[]},"previous":{"title":"泛型(generics)","level":"1.3.3","depth":2,"path":"advanced/generics.md","ref":"advanced/generics.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","prism","prism-themes","-livereload","search-plus","splitter","copy-code-button","todo","anchor-navigation-ex","anchors","expandable-chapters","-toggle-chapters"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-atom-dark.css"]},"todo":{},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"prism-themes":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"WodahsOrez","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"第一本GitBook","language":"zh-hans","links":{"sidebar":{"Home":"http://###"}},"gitbook":"3.2.3","description":"Typora的使用"},"file":{"path":"advanced/IO.md","mtime":"2019-03-10T08:37:44.724Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-17T14:03:49.445Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1250 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>泛型(generics) · 第一本GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="WodahsOrez">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-atom-dark.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="IO.html" />
+    
+    
+    <link rel="prev" href="collection.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://###" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Java基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../basic/class.html">
+            
+                <a href="../basic/class.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    类，抽象类，接口，多态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../basic/controlStatement.html">
+            
+                <a href="../basic/controlStatement.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    流程控制语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../basic/datatype.html">
+            
+                <a href="../basic/datatype.html">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    数据类型和运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../basic/function.html">
+            
+                <a href="../basic/function.html">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    方法和数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../basic/innerClass.html">
+            
+                <a href="../basic/innerClass.html">
+            
+                    
+                        <b>1.2.5.</b>
+                    
+                    内部类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../basic/modifier.html">
+            
+                <a href="../basic/modifier.html">
+            
+                    
+                        <b>1.2.6.</b>
+                    
+                    修饰符
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                        <b>1.3.</b>
+                    
+                    Java进阶
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="annotation.html">
+            
+                <a href="annotation.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    注解(annotation)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="collection.html">
+            
+                <a href="collection.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    集合框架和泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3" data-path="generics.html">
+            
+                <a href="generics.html">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    泛型(generics)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="IO.html">
+            
+                <a href="IO.html">
+            
+                    
+                        <b>1.3.4.</b>
+                    
+                    输入输出流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="string.html">
+            
+                <a href="string.html">
+            
+                    
+                        <b>1.3.5.</b>
+                    
+                    String类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="thread.html">
+            
+                <a href="thread.html">
+            
+                    
+                        <b>1.3.6.</b>
+                    
+                    多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="usefulClass.html">
+            
+                <a href="usefulClass.html">
+            
+                    
+                        <b>1.3.7.</b>
+                    
+                    实用类
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                        <b>1.4.</b>
+                    
+                    JavaWeb
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../javaWeb/ELexperssion.html">
+            
+                <a href="../javaWeb/ELexperssion.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    EL(表达式语言)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../javaWeb/JDBC.html">
+            
+                <a href="../javaWeb/JDBC.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    JDBC(Java数据库连接）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../javaWeb/jsp.html">
+            
+                <a href="../javaWeb/jsp.html">
+            
+                    
+                        <b>1.4.3.</b>
+                    
+                    JSP(Java Server Pages)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../javaWeb/JSTL.html">
+            
+                <a href="../javaWeb/JSTL.html">
+            
+                    
+                        <b>1.4.4.</b>
+                    
+                    JSTL(JSP标准标签库)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../javaWeb/Listener&Fiter.html">
+            
+                <a href="../javaWeb/Listener&Fiter.html">
+            
+                    
+                        <b>1.4.5.</b>
+                    
+                    过滤器和监视器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../javaWeb/servlet.html">
+            
+                <a href="../javaWeb/servlet.html">
+            
+                    
+                        <b>1.4.6.</b>
+                    
+                    servlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../javaWeb/xml.html">
+            
+                <a href="../javaWeb/xml.html">
+            
+                    
+                        <b>1.4.7.</b>
+                    
+                    XML
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                        <b>1.5.</b>
+                    
+                    数据库
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../database/function.html">
+            
+                <a href="../database/function.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    MySQL数据库函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../database/MySQL.html">
+            
+                <a href="../database/MySQL.html">
+            
+                    
+                        <b>1.5.2.</b>
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../database/SQL.html">
+            
+                <a href="../database/SQL.html">
+            
+                    
+                        <b>1.5.3.</b>
+                    
+                    结构化查询语言(SQL)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../database/transaction.html">
+            
+                <a href="../database/transaction.html">
+            
+                    
+                        <b>1.5.4.</b>
+                    
+                    事务Transaction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../database/Untitled.html">
+            
+                <a href="../database/Untitled.html">
+            
+                    
+                        <b>1.5.5.</b>
+                    
+                    #约束,索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                        <b>1.6.</b>
+                    
+                    设计模式
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../DesignPatterns/designPatterns.html">
+            
+                <a href="../DesignPatterns/designPatterns.html">
+            
+                    
+                        <b>1.6.1.</b>
+                    
+                    概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../DesignPatterns/facade.html">
+            
+                <a href="../DesignPatterns/facade.html">
+            
+                    
+                        <b>1.6.2.</b>
+                    
+                    门面模式(facade)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../DesignPatterns/factory.html">
+            
+                <a href="../DesignPatterns/factory.html">
+            
+                    
+                        <b>1.6.3.</b>
+                    
+                    工厂模式(factory)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../DesignPatterns/flyweight.html">
+            
+                <a href="../DesignPatterns/flyweight.html">
+            
+                    
+                        <b>1.6.4.</b>
+                    
+                    享元模式(flyweight)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../DesignPatterns/interpreter.html">
+            
+                <a href="../DesignPatterns/interpreter.html">
+            
+                    
+                        <b>1.6.5.</b>
+                    
+                    解释器模式(interpreter)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../DesignPatterns/iterator.html">
+            
+                <a href="../DesignPatterns/iterator.html">
+            
+                    
+                        <b>1.6.6.</b>
+                    
+                    迭代器模式(iterator)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../DesignPatterns/mediator.html">
+            
+                <a href="../DesignPatterns/mediator.html">
+            
+                    
+                        <b>1.6.7.</b>
+                    
+                    中介者模式(mediator)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../DesignPatterns/memento.html">
+            
+                <a href="../DesignPatterns/memento.html">
+            
+                    
+                        <b>1.6.8.</b>
+                    
+                    备忘录模式(memento)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../DesignPatterns/observer.html">
+            
+                <a href="../DesignPatterns/observer.html">
+            
+                    
+                        <b>1.6.9.</b>
+                    
+                    观察者模式(observer)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../DesignPatterns/prototype.html">
+            
+                <a href="../DesignPatterns/prototype.html">
+            
+                    
+                        <b>1.6.10.</b>
+                    
+                    原型模式(prototype)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="../DesignPatterns/proxy.html">
+            
+                <a href="../DesignPatterns/proxy.html">
+            
+                    
+                        <b>1.6.11.</b>
+                    
+                    代理模式(proxy)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="../DesignPatterns/singleton.html">
+            
+                <a href="../DesignPatterns/singleton.html">
+            
+                    
+                        <b>1.6.12.</b>
+                    
+                    单例模式(singleton)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="../DesignPatterns/state.html">
+            
+                <a href="../DesignPatterns/state.html">
+            
+                    
+                        <b>1.6.13.</b>
+                    
+                    状态模式(state)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="../DesignPatterns/strategy.html">
+            
+                <a href="../DesignPatterns/strategy.html">
+            
+                    
+                        <b>1.6.14.</b>
+                    
+                    策略模式(strategy)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="../DesignPatterns/template.html">
+            
+                <a href="../DesignPatterns/template.html">
+            
+                    
+                        <b>1.6.15.</b>
+                    
+                    模板方法模式(template)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16" data-path="../DesignPatterns/visitor.html">
+            
+                <a href="../DesignPatterns/visitor.html">
+            
+                    
+                        <b>1.6.16.</b>
+                    
+                    访问者模式(visitor)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.17" data-path="../DesignPatterns/adapter.html">
+            
+                <a href="../DesignPatterns/adapter.html">
+            
+                    
+                        <b>1.6.17.</b>
+                    
+                    适配器模式(adapter)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18" data-path="../DesignPatterns/bridge.html">
+            
+                <a href="../DesignPatterns/bridge.html">
+            
+                    
+                        <b>1.6.18.</b>
+                    
+                    桥梁模式(bridge)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.19" data-path="../DesignPatterns/builder.html">
+            
+                <a href="../DesignPatterns/builder.html">
+            
+                    
+                        <b>1.6.19.</b>
+                    
+                    建造者模式(builder)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.20" data-path="../DesignPatterns/chain.html">
+            
+                <a href="../DesignPatterns/chain.html">
+            
+                    
+                        <b>1.6.20.</b>
+                    
+                    责任链模式(Chain of Responsibility)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.21" data-path="../DesignPatterns/command.html">
+            
+                <a href="../DesignPatterns/command.html">
+            
+                    
+                        <b>1.6.21.</b>
+                    
+                    命令模式(command)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22" data-path="../DesignPatterns/composite.html">
+            
+                <a href="../DesignPatterns/composite.html">
+            
+                    
+                        <b>1.6.22.</b>
+                    
+                    组合模式(composite)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.23" data-path="../DesignPatterns/decorator.html">
+            
+                <a href="../DesignPatterns/decorator.html">
+            
+                    
+                        <b>1.6.23.</b>
+                    
+                    装饰模式(decorator)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                        <b>1.7.</b>
+                    
+                    其他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Typora.html">
+            
+                <a href="../Typora.html">
+            
+                    
+                        <b>1.7.1.</b>
+                    
+                    Typora的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../PreviewImg.html">
+            
+                <a href="../PreviewImg.html">
+            
+                    
+                        <b>1.7.2.</b>
+                    
+                    图片预览总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >泛型(generics)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x6CDB;&#x578B;generics"><b> </b>&#x6CDB;&#x578B;(generics)</a></li><ul><li><span class="title-icon "></span><a href="#&#x6CDB;&#x578B;&#x7C7B;"><b>1. </b>&#x6CDB;&#x578B;&#x7C7B;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5B9A;&#x4E49;&#x6CDB;&#x578B;&#x7C7B;&#x7684;&#x8BED;&#x6CD5;&#xFF1A;"><b>1.1. </b>&#x5B9A;&#x4E49;&#x6CDB;&#x578B;&#x7C7B;&#x7684;&#x8BED;&#x6CD5;&#xFF1A;</a></li><li><span class="title-icon "></span><a href="#&#x521B;&#x5EFA;&#x6CDB;&#x578B;&#x7C7B;&#x7684;&#x8BED;&#x6CD5;&#xFF1A;"><b>1.2. </b>&#x521B;&#x5EFA;&#x6CDB;&#x578B;&#x7C7B;&#x7684;&#x8BED;&#x6CD5;&#xFF1A;</a></li></ul><li><span class="title-icon "></span><a href="#&#x6CDB;&#x578B;&#x65B9;&#x6CD5;"><b>2. </b>&#x6CDB;&#x578B;&#x65B9;&#x6CD5;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5B9A;&#x4E49;&#x6CDB;&#x578B;&#x65B9;&#x6CD5;&#x7684;&#x8BED;&#x6CD5;&#xFF1A;"><b>2.1. </b>&#x5B9A;&#x4E49;&#x6CDB;&#x578B;&#x65B9;&#x6CD5;&#x7684;&#x8BED;&#x6CD5;&#xFF1A;</a></li><li><span class="title-icon "></span><a href="#&#x6CDB;&#x578B;&#x65B9;&#x6CD5;&#x7684;&#x4F7F;&#x7528;"><b>2.2. </b>&#x6CDB;&#x578B;&#x65B9;&#x6CD5;&#x7684;&#x4F7F;&#x7528;:</a></li></ul><li><span class="title-icon "></span><a href="#&#x6CDB;&#x578B;&#x53C2;&#x6570;"><b>3. </b>&#x6CDB;&#x578B;&#x53C2;&#x6570;</a></li><ul><li><span class="title-icon "></span><a href="#&#x6CDB;&#x578B;&#x53C2;&#x6570;_1"><b>3.1. </b>&#x6CDB;&#x578B;&#x53C2;&#x6570;</a></li><li><span class="title-icon "></span><a href="#&#x6CDB;&#x578B;&#x7684;&#x9650;&#x5B9A;&#xFF1A;"><b>3.2. </b>&#x6CDB;&#x578B;&#x7684;&#x9650;&#x5B9A;&#xFF1A;</a></li><li><span class="title-icon "></span><a href="#&#x65B9;&#x6CD5;&#x53C2;&#x6570;&#x91CD;&#x5199;"><b>3.3. </b>&#x65B9;&#x6CD5;&#x53C2;&#x6570;&#x91CD;&#x5199;</a></li><li><span class="title-icon "></span><a href="#&#x6CDB;&#x578B;t&#x548C;&#x7684;&#x5DEE;&#x522B;"><b>3.4. </b>&#x6CDB;&#x578B;T&#x548C;?&#x7684;&#x5DEE;&#x522B;</a></li><li><span class="title-icon "></span><a href="#&#x6CDB;&#x578B;&#x65E0;&#x6CD5;&#x5411;&#x4E0A;&#x8F6C;&#x578B;"><b>3.5. </b>&#x6CDB;&#x578B;&#x65E0;&#x6CD5;&#x5411;&#x4E0A;&#x8F6C;&#x578B;</a></li></ul><li><span class="title-icon "></span><a href="#&#x901A;&#x914D;&#x7B26;"><b>4. </b>&#x901A;&#x914D;&#x7B26;</a></li><ul><li><span class="title-icon "></span><a href="#&#x901A;&#x914D;&#x7B26;&#x4E0A;&#x9650;&#x5199;&#x5165;&#x7684;&#x60C5;&#x51B5;"><b>4.1. </b>&#x901A;&#x914D;&#x7B26;&#x4E0A;&#x9650;&#x5199;&#x5165;&#x7684;&#x60C5;&#x51B5;</a></li><li><span class="title-icon "></span><a href="#&#x901A;&#x914D;&#x7B26;&#x4E0B;&#x9650;&#x5199;&#x5165;&#x7684;&#x60C5;&#x51B5;"><b>4.2. </b>&#x901A;&#x914D;&#x7B26;&#x4E0B;&#x9650;&#x5199;&#x5165;&#x7684;&#x60C5;&#x51B5;</a></li><li><span class="title-icon "></span><a href="#&#x6355;&#x83B7;&#x52A9;&#x624B;-&#x65B9;&#x6CD5;"><b>4.3. </b>&#x201C;&#x6355;&#x83B7;&#x52A9;&#x624B;&#x201D; &#x65B9;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x5B58;&#x53D6;&#x539F;&#x5219;&#x548C;pecs&#x6CD5;&#x5219;"><b>4.4. </b>&#x5B58;&#x53D6;&#x539F;&#x5219;&#x548C;PECS&#x6CD5;&#x5219;</a></li><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;&#xFF1A;"><b>4.5. </b>&#x53C2;&#x8003;&#xFF1A;</a></li></ul></ul></ul></div><a href="#&#x6CDB;&#x578B;generics" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x6CDB;&#x578B;generics"><a name="&#x6CDB;&#x578B;generics" class="plugin-anchor" href="#&#x6CDB;&#x578B;generics"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6CDB;&#x578B;generics" class="anchor-navigation-ex-anchor" href="#&#x6CDB;&#x578B;generics"><i class="fa fa-link" aria-hidden="true"></i></a> &#x6CDB;&#x578B;(generics)</h1>
+<ul>
+<li>&#x6CDB;&#x578B;&#x5C31;&#x662F;&#x628A;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x5316;&#xFF0C;&lt;&gt;&#x5373;&#x5B58;&#x653E;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;T&#xFF0C;E&#xFF0C;K&#xFF0C;V&#x5373;&#x53D8;&#x91CF;&#x540D;.&#x6CDB;&#x578B;&#x7684;&#x5B9E;&#x4F8B;&#x5316;&#x5373;&#x7C7B;&#x4F3C;&#x4E8E;&#x53D8;&#x91CF;&#x7684;&#x8D4B;&#x503C;&#xFF0C;&#x628A;&#x5177;&#x4F53;&#x7684;&#x7C7B;&#x578B;&#x540D;&#x586B;&#x5165;&lt;&gt;&#x4E2D;&#xFF0C;&#x5373;&#x76F8;&#x5E94;&#x4F4D;&#x7F6E;&#x5904;&#x7684;T&#x53D8;&#x6210;&#x8FD9;&#x79CD;&#x7C7B;&#x578B;&#x3002;</li>
+<li>&#x6CDB;&#x578B;&#x7684;&#x8BBE;&#x8BA1;&#x76EE;&#x7684;&#x662F;&#x7528;T&#x4EE3;&#x66FF;Object&#x6765;&#x4F20;&#x5165;&#x672A;&#x77E5;&#x7C7B;&#x578B;&#x5BF9;&#x8C61;&#xFF0C;&#x800C;?&#x662F;&#x4E3A;&#x4E86;&#x80FD;&#x4F7F;&#x6CDB;&#x578B;&#x8FBE;&#x5230;&#x534F;&#x53D8;&#x548C;&#x9006;&#x53D8;&#x8FD9;&#x79CD;&#x5173;&#x7CFB;&#x800C;&#x5B58;&#x5728;&#x7684;&#xFF0C;&#x5373;&#x4F7F;&#x6CDB;&#x578B;&#x7C7B;&#x578B;&#x95F4;&#x5EFA;&#x7ACB;&#x5173;&#x7CFB;.</li>
+</ul>
+<h2 id="&#x6CDB;&#x578B;&#x7C7B;"><a name="&#x6CDB;&#x578B;&#x7C7B;" class="plugin-anchor" href="#&#x6CDB;&#x578B;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6CDB;&#x578B;&#x7C7B;" class="anchor-navigation-ex-anchor" href="#&#x6CDB;&#x578B;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x6CDB;&#x578B;&#x7C7B;</h2>
+<h3 id="&#x5B9A;&#x4E49;&#x6CDB;&#x578B;&#x7C7B;&#x7684;&#x8BED;&#x6CD5;&#xFF1A;"><a name="&#x5B9A;&#x4E49;&#x6CDB;&#x578B;&#x7C7B;&#x7684;&#x8BED;&#x6CD5;&#xFF1A;" class="plugin-anchor" href="#&#x5B9A;&#x4E49;&#x6CDB;&#x578B;&#x7C7B;&#x7684;&#x8BED;&#x6CD5;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5B9A;&#x4E49;&#x6CDB;&#x578B;&#x7C7B;&#x7684;&#x8BED;&#x6CD5;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x5B9A;&#x4E49;&#x6CDB;&#x578B;&#x7C7B;&#x7684;&#x8BED;&#x6CD5;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x5B9A;&#x4E49;&#x6CDB;&#x578B;&#x7C7B;&#x7684;&#x8BED;&#x6CD5;&#xFF1A;</h3>
+<p>&#x8BBF;&#x95EE;&#x4FEE;&#x9970;&#x7B26;<code>class className<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TypeList</span><span class="token punctuation">&gt;</span></span></code>
+TypeList&#x8868;&#x793A;&#x7C7B;&#x578B;&#x53D8;&#x91CF;&#x5217;&#x8868;&#xFF0C;&#x6BCF;&#x4E2A;&#x7C7B;&#x578B;&#x53D8;&#x91CF;&#x4E4B;&#x95F4;&#x4EE5;&#x9017;&#x53F7;&#x9694;&#x5F00;&#x3002;
+&#x4F8B;&#x5982;&#xFF1A;<code>Interface Collection<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>E</span><span class="token punctuation">&gt;</span></span></code>     &#x6216;&#x8005;   <code>Interface Map<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>K,V</span><span class="token punctuation">&gt;</span></span></code>     &#x5176;&#x4E2D;E,K,V&#x4E3A;&#x7C7B;&#x578B;&#x53D8;&#x91CF;(&#x53C2;&#x6570;)&#xFF0C;&#x548C;&#x53D8;&#x91CF;&#x4E00;&#x6837;&#xFF0C;&#x540D;&#x79F0;&#x53EF;&#x4EE5;&#x81EA;&#x5B9A;&#x4E49;&#x3002;</p>
+<h3 id="&#x521B;&#x5EFA;&#x6CDB;&#x578B;&#x7C7B;&#x7684;&#x8BED;&#x6CD5;&#xFF1A;"><a name="&#x521B;&#x5EFA;&#x6CDB;&#x578B;&#x7C7B;&#x7684;&#x8BED;&#x6CD5;&#xFF1A;" class="plugin-anchor" href="#&#x521B;&#x5EFA;&#x6CDB;&#x578B;&#x7C7B;&#x7684;&#x8BED;&#x6CD5;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x521B;&#x5EFA;&#x6CDB;&#x578B;&#x7C7B;&#x7684;&#x8BED;&#x6CD5;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;&#x6CDB;&#x578B;&#x7C7B;&#x7684;&#x8BED;&#x6CD5;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x521B;&#x5EFA;&#x6CDB;&#x578B;&#x7C7B;&#x7684;&#x8BED;&#x6CD5;&#xFF1A;</h3>
+<p><code>className<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TypeList</span><span class="token punctuation">&gt;</span></span> =new className<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TypeList</span><span class="token punctuation">&gt;</span></span>(argList);</code>
+argList&#x8868;&#x793A;&#x5B9E;&#x9645;&#x4F20;&#x9012;&#x7684;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x5217;&#x8868;&#xFF0C;&#x540C;&#x6837;&#x4EE5;&#x9017;&#x53F7;&#x9694;&#x5F00;&#x3002;
+&#x4F8B;&#x5982;&#xFF1A;<code>ArrayList<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>String</span><span class="token punctuation">&gt;</span></span> =new ArrayList<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>String</span><span class="token punctuation">&gt;</span></span>();</code>
+&#x6CDB;&#x578B;&#x7684;&#x58F0;&#x660E;&#x5FC5;&#x5199;,&#x540E;&#x9762;&#x53EF;&#x4EE5;&#x53EA;&#x5199;&lt;&gt;,&#x56E0;&#x4E3A;&#x6709;&#x7C7B;&#x578B;&#x63A8;&#x65AD;&#x673A;&#x5236;&#x3002;
+&#x5373;&#xFF1A;<code>ArrayList<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>String</span><span class="token punctuation">&gt;</span></span> =new ArrayList&lt;&gt;()</code></p>
+<h2 id="&#x6CDB;&#x578B;&#x65B9;&#x6CD5;"><a name="&#x6CDB;&#x578B;&#x65B9;&#x6CD5;" class="plugin-anchor" href="#&#x6CDB;&#x578B;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6CDB;&#x578B;&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x6CDB;&#x578B;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x6CDB;&#x578B;&#x65B9;&#x6CD5;</h2>
+<h3 id="&#x5B9A;&#x4E49;&#x6CDB;&#x578B;&#x65B9;&#x6CD5;&#x7684;&#x8BED;&#x6CD5;&#xFF1A;"><a name="&#x5B9A;&#x4E49;&#x6CDB;&#x578B;&#x65B9;&#x6CD5;&#x7684;&#x8BED;&#x6CD5;&#xFF1A;" class="plugin-anchor" href="#&#x5B9A;&#x4E49;&#x6CDB;&#x578B;&#x65B9;&#x6CD5;&#x7684;&#x8BED;&#x6CD5;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5B9A;&#x4E49;&#x6CDB;&#x578B;&#x65B9;&#x6CD5;&#x7684;&#x8BED;&#x6CD5;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x5B9A;&#x4E49;&#x6CDB;&#x578B;&#x65B9;&#x6CD5;&#x7684;&#x8BED;&#x6CD5;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. &#x5B9A;&#x4E49;&#x6CDB;&#x578B;&#x65B9;&#x6CD5;&#x7684;&#x8BED;&#x6CD5;&#xFF1A;</h3>
+<p>&#x8BBF;&#x95EE;&#x4FEE;&#x9970;&#x7B26;&lt;&#x7C7B;&#x578B;&#x53C2;&#x6570;&gt; &#x8FD4;&#x56DE;&#x503C; &#x65B9;&#x6CD5;&#x540D; (&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x5217;&#x8868;)
+<strong>&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x653E;&#x5728;&#x8BBF;&#x95EE;&#x4FEE;&#x9970;&#x7B26;&#x7684;&#x540E;&#x9762;&#xFF0C;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x7684;&#x524D;&#x9762;.&#x6CDB;&#x578B;&#x7C7B;&#x7684;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x5982;&#x679C;&#x60F3;&#x7528;&#x6CDB;&#x578B;&#xFF0C;&#x5FC5;&#x987B;&#x91CD;&#x65B0;&#x5B9A;&#x4E49;&#x6210;&#x6CDB;&#x578B;&#x65B9;&#x6CD5;&#x3002;</strong>
+&#x4F8B;&#x5982;&#xFF1A;<code>public<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span> void showName (T t){ }</code></p>
+<h3 id="&#x6CDB;&#x578B;&#x65B9;&#x6CD5;&#x7684;&#x4F7F;&#x7528;"><a name="&#x6CDB;&#x578B;&#x65B9;&#x6CD5;&#x7684;&#x4F7F;&#x7528;" class="plugin-anchor" href="#&#x6CDB;&#x578B;&#x65B9;&#x6CD5;&#x7684;&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6CDB;&#x578B;&#x65B9;&#x6CD5;&#x7684;&#x4F7F;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x6CDB;&#x578B;&#x65B9;&#x6CD5;&#x7684;&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. &#x6CDB;&#x578B;&#x65B9;&#x6CD5;&#x7684;&#x4F7F;&#x7528;:</h3>
+<p>&#x4F8B;&#x5982;:<code>&#x5BF9;&#x8C61;.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>String</span><span class="token punctuation">&gt;</span></span>showNam(name)</code>  &#x5199;&#x5728;&#x65B9;&#x6CD5;&#x540D;&#x524D;&#x9762;,&#x8FD9;&#x6837;&#x7F16;&#x8BD1;&#x5668;&#x53EF;&#x4EE5;&#x5224;&#x65AD;name&#x662F;&#x5426;&#x4E3A;String
+&#x6709;&#x8DB3;&#x591F;&#x6761;&#x4EF6;&#x5224;&#x65AD;&#x65F6;,&#x6CDB;&#x578B;&#x65B9;&#x6CD5;&#x524D;&#x7684;&lt;&gt;&#x53EF;&#x4EE5;&#x7701;&#x7565;.</p>
+<p><strong>&#x6CDB;&#x578B;&#x65B9;&#x6CD5;&#x4F7F;&#x7528;&#x65F6;&#x5982;&#x679C;&#x52A0;&lt;&gt;&#x524D;&#x9762;&#x5FC5;&#x987B;&#x8981;&#x6709;&#x5BF9;&#x8C61;.&#x6216;&#x8005;&#x7C7B;&#x540D;.&#x6216;this.super.&#x65E0;&#x8BBA;&#x662F;&#x5426;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x7C7B;&#x91CC;</strong></p>
+<h2 id="&#x6CDB;&#x578B;&#x53C2;&#x6570;"><a name="&#x6CDB;&#x578B;&#x53C2;&#x6570;" class="plugin-anchor" href="#&#x6CDB;&#x578B;&#x53C2;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6CDB;&#x578B;&#x53C2;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x6CDB;&#x578B;&#x53C2;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x6CDB;&#x578B;&#x53C2;&#x6570;</h2>
+<h3 id="&#x6CDB;&#x578B;&#x53C2;&#x6570;_1"><a name="&#x6CDB;&#x578B;&#x53C2;&#x6570;_1" class="plugin-anchor" href="#&#x6CDB;&#x578B;&#x53C2;&#x6570;_1"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6CDB;&#x578B;&#x53C2;&#x6570;_1" class="anchor-navigation-ex-anchor" href="#&#x6CDB;&#x578B;&#x53C2;&#x6570;_1"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. &#x6CDB;&#x578B;&#x53C2;&#x6570;</h3>
+<p>&#x6CDB;&#x578B;&#x76F4;&#x63A5;&#x653E;&#x5728;&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#x5217;&#x8868;&#x91CC;,(&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x5FC5;&#x987B;&#x5B9A;&#x4E49;&#x6210;&#x6CDB;&#x578B;&#x65B9;&#x6CD5;)
+&#x4F8B;&#x5982;:
+<code>public void show(List<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>?</span><span class="token punctuation">&gt;</span></span> list)</code>  &#x4EFB;&#x610F;&#x60C5;&#x51B5;&#x90FD;&#x53EF;&#x7528; 
+<code>public void show(List<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span> list)</code>  &#x5FC5;&#x987B;&#x5728;&#x6CDB;&#x578B;&#x7C7B;&#x91CC;&#x4F7F;&#x7528;
+<code>public static void show(List<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>?</span><span class="token punctuation">&gt;</span></span> list)</code>  &#x53EF;&#x4EE5;&#x4E0D;&#x5B9A;&#x4E49;&#x6210;&#x6CDB;&#x578B;&#x65B9;&#x6CD5;
+<code>public static <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span>void show(List<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span> list)</code>  &#x5FC5;&#x987B;&#x5B9A;&#x4E49;&#x6210;&#x6CDB;&#x578B;&#x65B9;&#x6CD5;,&#x4E0D;&#x7BA1;&#x662F;&#x5426;&#x5728;&#x6CDB;&#x578B;&#x7C7B;&#x91CC;</p>
+<h3 id="&#x6CDB;&#x578B;&#x7684;&#x9650;&#x5B9A;&#xFF1A;"><a name="&#x6CDB;&#x578B;&#x7684;&#x9650;&#x5B9A;&#xFF1A;" class="plugin-anchor" href="#&#x6CDB;&#x578B;&#x7684;&#x9650;&#x5B9A;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6CDB;&#x578B;&#x7684;&#x9650;&#x5B9A;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x6CDB;&#x578B;&#x7684;&#x9650;&#x5B9A;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. &#x6CDB;&#x578B;&#x7684;&#x9650;&#x5B9A;&#xFF1A;</h3>
+<p>&#x4E0A;&#x9650;&#xFF1A;<strong>extends&#x8868;&#x793A;&#x7EE7;&#x627F;&#x6216;&#x5B9E;&#x73B0;&#x6216;&#x4E24;&#x8005;&#x7686;&#x6709;&#xFF0C;&#x540E;&#x9762;&#x53EF;&#x4EE5;&#x6709;&#x4E00;&#x4E2A;&#x7C7B;&#x548C;&#x591A;&#x4E2A;&#x63A5;&#x53E3;&#xFF0C;<u>&#x7C7B;&#x5FC5;&#x987B;&#x5728;&#x524D;</u>&#x3002;</strong>
+&#x8BED;&#x6CD5;&#xFF1A;<t extends="" boundingtype="">     <t extends="" comparable="" &="" serializable="">
+&#x4E0B;&#x9650;&#xFF1A;
+<strong>&#x6CA1;&#x6709;T super XXX&#x7684;&#x5199;&#x6CD5;,&#x53EA;&#x80FD;&#x7528;? super XXX</strong>
+&#x901A;&#x914D;&#x7B26;&#x7C7B;&#x578B;&#xFF1A;
+&#x4F8B;&#x5982;&#xFF1A;<code>public static void printBuddies(Pair<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>?</span> <span class="token attr-name">extends</span> <span class="token attr-name">Employee</span><span class="token punctuation">&gt;</span></span> p)</code>
+<a href="http://www.cnblogs.com/xiaomiganfan/p/5390252.html" target="_blank">&#x5982;&#x4F55;&#x7406;&#x89E3; Java &#x4E2D;&#x7684; <t extends="" comparable<?="" super="" t="">&gt;</t></a>
+&#x6CDB;&#x578B;&#x7684;&#x64E6;&#x9664;&#xFF0C;&#x4E0D;&#x7528;&#x6CDB;&#x578B;&#x65F6;&#xFF0C;&#x7528;&#x7684;&#x662F;&#x539F;&#x59CB;&#x7C7B;&#x578B;&#xFF0C;&#x65E0;&#x9650;&#x5B9A;&#x7C7B;&#x578B;&#x7528;Object&#xFF0C;&#x8BE6;&#x89C1;P534.</t></t></p>
+<h3 id="&#x65B9;&#x6CD5;&#x53C2;&#x6570;&#x91CD;&#x5199;"><a name="&#x65B9;&#x6CD5;&#x53C2;&#x6570;&#x91CD;&#x5199;" class="plugin-anchor" href="#&#x65B9;&#x6CD5;&#x53C2;&#x6570;&#x91CD;&#x5199;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x65B9;&#x6CD5;&#x53C2;&#x6570;&#x91CD;&#x5199;" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;&#x53C2;&#x6570;&#x91CD;&#x5199;"><i class="fa fa-link" aria-hidden="true"></i></a>3.3. &#x65B9;&#x6CD5;&#x53C2;&#x6570;&#x91CD;&#x5199;</h3>
+<p><code>public static <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span>void getData(List<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span> data)</code>
+<code>public static void getData(List<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>?</span><span class="token punctuation">&gt;</span></span> data)</code>
+<code>public static void getData(List<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>?</span> <span class="token attr-name">extends</span> <span class="token attr-name">Number</span><span class="token punctuation">&gt;</span></span> data)</code>
+<strong>&#x8FD9;&#x4E09;&#x79CD;&#x65B9;&#x6CD5;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;,&#x5373;&#x53C2;&#x6570;&#x89C6;&#x4E3A;&#x4E00;&#x81F4;,&#x65E0;&#x6CD5;&#x770B;&#x505A;&#x91CD;&#x8F7D;.</strong></p>
+<h3 id="&#x6CDB;&#x578B;t&#x548C;&#x7684;&#x5DEE;&#x522B;"><a name="&#x6CDB;&#x578B;t&#x548C;&#x7684;&#x5DEE;&#x522B;" class="plugin-anchor" href="#&#x6CDB;&#x578B;t&#x548C;&#x7684;&#x5DEE;&#x522B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6CDB;&#x578B;t&#x548C;&#x7684;&#x5DEE;&#x522B;" class="anchor-navigation-ex-anchor" href="#&#x6CDB;&#x578B;t&#x548C;&#x7684;&#x5DEE;&#x522B;"><i class="fa fa-link" aria-hidden="true"></i></a>3.4. &#x6CDB;&#x578B;T&#x548C;?&#x7684;&#x5DEE;&#x522B;</h3>
+<p>T&#x53EA;&#x80FD;&#x5728;&#x6CDB;&#x578B;<code>&#x7C7B;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span></code>&#x6216;<code>&#x6CDB;&#x578B;&#x65B9;&#x6CD5;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span></code>&#x4E2D;&#x4F7F;&#x7528;,&#x800C;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>?</span><span class="token punctuation">&gt;</span></span></code>&#x548C;&#x5176;&#x4E0A;&#x4E0B;&#x9650;&#x53EF;&#x4EE5;&#x5728;&#x4EFB;&#x4F55;&#x60C5;&#x51B5;&#x4E0B;&#x4F7F;&#x7528;,&#x5373;&#x666E;&#x901A;&#x65B9;&#x6CD5;&#x548C;&#x7C7B;&#x7684;&#x4EFB;&#x610F;&#x4F4D;&#x7F6E;&#x4F7F;&#x7528;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>?</span><span class="token punctuation">&gt;</span></span></code>.
+&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x7684;<code>List<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>?</span><span class="token punctuation">&gt;</span></span> list</code> &#x4E2D;,&#x7531;&#x4E8E;list&#x5B58;&#x5728;&#x4E0D;&#x786E;&#x5B9A;&#x6027;,&#x4E0D;&#x80FD;&#x7528;<code>list.add()</code>&#x6DFB;&#x52A0;&#x4EFB;&#x610F;&#x5143;&#x7D20;.&#x53EA;&#x80FD;&#x7528;<code>list =new ArrayList<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Integer</span><span class="token punctuation">&gt;</span></span>();</code>&#x7ED9;&#x5176;&#x8D4B;&#x503C;.
+<strong>T&#x662F;&#x7528;&#x5728;&#x5B9A;&#x4E49;&#x6CDB;&#x578B;&#x7684;,&#x800C;?&#x662F;&#x5728;&#x5B9A;&#x4EE5;&#x540E;&#x7684;&#x6CDB;&#x578B;&#x4F7F;&#x7528;&#x65F6;&#x5BF9;&#x5176;T&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x8303;&#x56F4;&#x9650;&#x5236;&#x7684;&#x5B58;&#x5728;.&#x5373;&#x5148;&#x6709;T&#x540E;&#x6709;?</strong>
+<strong>T extends &#x662F;&#x5BF9;T&#x8FDB;&#x884C;&#x5FC5;&#x8981;&#x7684;&#x5C5E;&#x6027;&#x89E3;&#x91CA;, &#x800C;T super&#x6CA1;&#x6709;&#x610F;&#x4E49;&#x6240;&#x4EE5;&#x4E0D;&#x5B58;&#x5728;.</strong></p>
+<h3 id="&#x6CDB;&#x578B;&#x65E0;&#x6CD5;&#x5411;&#x4E0A;&#x8F6C;&#x578B;"><a name="&#x6CDB;&#x578B;&#x65E0;&#x6CD5;&#x5411;&#x4E0A;&#x8F6C;&#x578B;" class="plugin-anchor" href="#&#x6CDB;&#x578B;&#x65E0;&#x6CD5;&#x5411;&#x4E0A;&#x8F6C;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6CDB;&#x578B;&#x65E0;&#x6CD5;&#x5411;&#x4E0A;&#x8F6C;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x6CDB;&#x578B;&#x65E0;&#x6CD5;&#x5411;&#x4E0A;&#x8F6C;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>3.5. &#x6CDB;&#x578B;&#x65E0;&#x6CD5;&#x5411;&#x4E0A;&#x8F6C;&#x578B;</h3>
+<pre class="language-"><code class="lang-java">Info<span class="token generics function"><span class="token punctuation">&lt;</span>String<span class="token punctuation">&gt;</span></span> i1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Info</span><span class="token generics function"><span class="token punctuation">&lt;</span>String<span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">;</span>      <span class="token comment">// &#x6CDB;&#x578B;&#x7C7B;&#x578B;&#x4E3A;String  </span>
+Info<span class="token generics function"><span class="token punctuation">&lt;</span>Object<span class="token punctuation">&gt;</span></span> i2 <span class="token operator">=</span> null <span class="token punctuation">;</span>  
+i2 <span class="token operator">=</span> i1 <span class="token punctuation">;</span>                               <span class="token comment">//&#x8FD9;&#x53E5;&#x4F1A;&#x51FA;&#x9519; incompatible types</span>
+</code></pre>
+<h2 id="&#x901A;&#x914D;&#x7B26;"><a name="&#x901A;&#x914D;&#x7B26;" class="plugin-anchor" href="#&#x901A;&#x914D;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x901A;&#x914D;&#x7B26;" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x914D;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x901A;&#x914D;&#x7B26;</h2>
+<p><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>?</span><span class="token punctuation">&gt;</span></span></code>&#x5373;&#x7B49;&#x6548;&#x4E8E;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>?</span> <span class="token attr-name">extends</span> <span class="token attr-name">Object</span><span class="token punctuation">&gt;</span></span></code>&#x7528;&#x4E8E;&#x62D3;&#x5C55;&#x7528;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Object</span><span class="token punctuation">&gt;</span></span></code>&#x7684;&#x60C5;&#x51B5;,&#x4F7F;&#x5176;&#x80FD;&#x517C;&#x5BB9;&#x66F4;&#x591A;&#x7C7B;&#x578B;
+<code>List<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>?</span> <span class="token attr-name">extends</span> <span class="token attr-name">Object</span><span class="token punctuation">&gt;</span></span></code>&#x662F;<code>List<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Integer</span><span class="token punctuation">&gt;</span></span></code>&#x7684;&#x7236;&#x7C7B;  &#x534F;&#x53D8;
+<code>List<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>?</span> <span class="token attr-name">super</span> <span class="token attr-name">Integer</span><span class="token punctuation">&gt;</span></span></code>&#x662F;<code>List&lt;Object</code>&#x7684;&#x7236;&#x7C7B;  &#x9006;&#x53D8;</p>
+<p><img src="images/generics/generics.png" alt="generics"></p>
+<h3 id="&#x901A;&#x914D;&#x7B26;&#x4E0A;&#x9650;&#x5199;&#x5165;&#x7684;&#x60C5;&#x51B5;"><a name="&#x901A;&#x914D;&#x7B26;&#x4E0A;&#x9650;&#x5199;&#x5165;&#x7684;&#x60C5;&#x51B5;" class="plugin-anchor" href="#&#x901A;&#x914D;&#x7B26;&#x4E0A;&#x9650;&#x5199;&#x5165;&#x7684;&#x60C5;&#x51B5;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x901A;&#x914D;&#x7B26;&#x4E0A;&#x9650;&#x5199;&#x5165;&#x7684;&#x60C5;&#x51B5;" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x914D;&#x7B26;&#x4E0A;&#x9650;&#x5199;&#x5165;&#x7684;&#x60C5;&#x51B5;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1. &#x901A;&#x914D;&#x7B26;&#x4E0A;&#x9650;&#x5199;&#x5165;&#x7684;&#x60C5;&#x51B5;</h3>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Wildcard</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        List<span class="token generics function"><span class="token punctuation">&lt;</span>Integer<span class="token punctuation">&gt;</span></span> list <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">getData</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">getData</span><span class="token punctuation">(</span>List<span class="token operator">&lt;</span><span class="token operator">?</span><span class="token operator">&gt;</span> list<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;data:&quot;</span> <span class="token operator">+</span> list<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  &#x4E0D;&#x80FD;&#x5199;&#x5165;
+        list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Object</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  &#x4E0D;&#x80FD;&#x5199;&#x5165;
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x56E0;&#x4E3A;<code>List<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>?</span><span class="token punctuation">&gt;</span></span></code>&#x53EF;&#x80FD;&#x662F;<code>List<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Object</span><span class="token punctuation">&gt;</span></span></code>&#x6216;<code>List<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Integer</span><span class="token punctuation">&gt;</span></span></code>,&#x6240;&#x4EE5;&#x4E3A;&#x907F;&#x514D;&#x51FA;&#x73B0;&#x4E0D;&#x80FD;&#x5199;&#x5165;&#x6240;&#x4EE5;&#x4E00;&#x5F8B;&#x4E0D;&#x80FD;&#x5199;&#x5165;&#x4EFB;&#x610F;&#x5BF9;&#x8C61;,&#x5728;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>?</span> <span class="token attr-name">extends</span> <span class="token attr-name">XX</span><span class="token punctuation">&gt;</span></span></code>&#x91CC;&#x9002;&#x7528;&#x8FD9;&#x4E2A;&#x89C4;&#x5219;</p>
+<h3 id="&#x901A;&#x914D;&#x7B26;&#x4E0B;&#x9650;&#x5199;&#x5165;&#x7684;&#x60C5;&#x51B5;"><a name="&#x901A;&#x914D;&#x7B26;&#x4E0B;&#x9650;&#x5199;&#x5165;&#x7684;&#x60C5;&#x51B5;" class="plugin-anchor" href="#&#x901A;&#x914D;&#x7B26;&#x4E0B;&#x9650;&#x5199;&#x5165;&#x7684;&#x60C5;&#x51B5;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x901A;&#x914D;&#x7B26;&#x4E0B;&#x9650;&#x5199;&#x5165;&#x7684;&#x60C5;&#x51B5;" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x914D;&#x7B26;&#x4E0B;&#x9650;&#x5199;&#x5165;&#x7684;&#x60C5;&#x51B5;"><i class="fa fa-link" aria-hidden="true"></i></a>4.2. &#x901A;&#x914D;&#x7B26;&#x4E0B;&#x9650;&#x5199;&#x5165;&#x7684;&#x60C5;&#x51B5;</h3>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Wildcard</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        List<span class="token generics function"><span class="token punctuation">&lt;</span>Integer<span class="token punctuation">&gt;</span></span> list <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">getData</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">getData</span><span class="token punctuation">(</span>List<span class="token operator">&lt;</span><span class="token operator">?</span> <span class="token keyword">super</span> Object<span class="token operator">&gt;</span> list<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;data:&quot;</span> <span class="token operator">+</span> list<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  &#x53EF;&#x4EE5;&#x5199;&#x5165;
+        list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Object</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  &#x53EF;&#x4EE5;&#x5199;&#x5165;
+
+
+    <span class="token punctuation">}</span>
+</code></pre>
+<p>&#x7531;&#x4E8E;&#x6709;&#x4E0B;&#x9650;,&#x6240;&#x4EE5;&#x4E0B;&#x9650;&#x53CA;&#x5176;&#x5B50;&#x7C7B;&#x90FD;&#x80FD;&#x5199;&#x5165;&#x800C;&#x4E0D;&#x7528;&#x62C5;&#x5FC3;&#x56E0;&#x4E3A;&#x4E0D;&#x786E;&#x5B9A;&#x6027;&#x800C;&#x4EA7;&#x751F;&#x9519;&#x8BEF;.</p>
+<p><a href="http://blog.csdn.net/baple/article/details/25056169#t1" target="_blank">&#x901A;&#x914D;&#x7B26;&#x8BB2;&#x89E3;&#x5F88;&#x8BE6;&#x7EC6;.</a></p>
+<h3 id="&#x6355;&#x83B7;&#x52A9;&#x624B;-&#x65B9;&#x6CD5;"><a name="&#x6355;&#x83B7;&#x52A9;&#x624B;-&#x65B9;&#x6CD5;" class="plugin-anchor" href="#&#x6355;&#x83B7;&#x52A9;&#x624B;-&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6355;&#x83B7;&#x52A9;&#x624B;-&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x6355;&#x83B7;&#x52A9;&#x624B;-&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>4.3. &#x201C;&#x6355;&#x83B7;&#x52A9;&#x624B;&#x201D; &#x65B9;&#x6CD5;</h3>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">rebox</span><span class="token punctuation">(</span>Box<span class="token operator">&lt;</span><span class="token operator">?</span><span class="token operator">&gt;</span> box<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">reboxHelper</span><span class="token punctuation">(</span>box<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">private</span><span class="token generics function"><span class="token punctuation">&lt;</span>V<span class="token punctuation">&gt;</span></span> <span class="token keyword">void</span> <span class="token function">reboxHelper</span><span class="token punctuation">(</span>Box<span class="token generics function"><span class="token punctuation">&lt;</span>V<span class="token punctuation">&gt;</span></span> box<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    box<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span>box<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x89E3;&#x6790;:<code>Box<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>?</span><span class="token punctuation">&gt;</span></span></code>&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x4E00;&#x4E2A;Object,&#x800C;<code>Box<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>V</span><span class="token punctuation">&gt;</span></span></code>&#x8FD4;&#x56DE;&#x7684;&#x662F;V</p>
+<h3 id="&#x5B58;&#x53D6;&#x539F;&#x5219;&#x548C;pecs&#x6CD5;&#x5219;"><a name="&#x5B58;&#x53D6;&#x539F;&#x5219;&#x548C;pecs&#x6CD5;&#x5219;" class="plugin-anchor" href="#&#x5B58;&#x53D6;&#x539F;&#x5219;&#x548C;pecs&#x6CD5;&#x5219;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5B58;&#x53D6;&#x539F;&#x5219;&#x548C;pecs&#x6CD5;&#x5219;" class="anchor-navigation-ex-anchor" href="#&#x5B58;&#x53D6;&#x539F;&#x5219;&#x548C;pecs&#x6CD5;&#x5219;"><i class="fa fa-link" aria-hidden="true"></i></a>4.4. &#x5B58;&#x53D6;&#x539F;&#x5219;&#x548C;PECS&#x6CD5;&#x5219;</h3>
+<p>&#x603B;&#x7ED3; ? extends &#x548C; the ? super &#x901A;&#x914D;&#x7B26;&#x7684;&#x7279;&#x5F81;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F97;&#x51FA;&#x4EE5;&#x4E0B;&#x7ED3;&#x8BBA;&#xFF1A;</p>
+<ol>
+<li>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x4ECE;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x91CC;&#x83B7;&#x53D6;&#x6570;&#x636E;&#xFF0C;&#x4F7F;&#x7528; ? extends &#x901A;&#x914D;&#x7B26;</li>
+<li>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x628A;&#x5BF9;&#x8C61;&#x5199;&#x5165;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x91CC;&#xFF0C;&#x4F7F;&#x7528; ? super &#x901A;&#x914D;&#x7B26;</li>
+<li>&#x5982;&#x679C;&#x4F60;&#x65E2;&#x60F3;&#x5B58;&#xFF0C;&#x53C8;&#x60F3;&#x53D6;&#xFF0C;&#x90A3;&#x5C31;&#x522B;&#x7528;&#x901A;&#x914D;&#x7B26;&#x3002;</li>
+</ol>
+<p>PECS&#x662F;&#x6307;&#x201D;Producer Extends, Consumer Super&#x201D;</p>
+<h3 id="&#x53C2;&#x8003;&#xFF1A;"><a name="&#x53C2;&#x8003;&#xFF1A;" class="plugin-anchor" href="#&#x53C2;&#x8003;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x53C2;&#x8003;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>4.5. &#x53C2;&#x8003;&#xFF1A;</h3>
+<p><a href="http://www.cnblogs.com/en-heng/p/5041124.html" target="_blank">&#x534F;&#x53D8;&#x9006;&#x53D8;</a></p>
+<p><a href="http://kb.cnblogs.com/page/104265/" target="_blank">java&#x6CDB;&#x578B;&#x7B80;&#x660E;&#x6559;&#x7A0B;</a></p>
+<p><a href="http://iteye.blog.163.com/blog/static/18630809620131472312201/" target="_blank">&#x6CDB;&#x578B;&#x4EE3;&#x7801;</a></p>
+<p><a href="http://blog.sina.com.cn/s/blog_65554d980100ijft.html" target="_blank">&#x901A;&#x914D;&#x7B26;</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="collection.html" class="navigation navigation-prev " aria-label="Previous page: 集合框架和泛型">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="IO.html" class="navigation navigation-next " aria-label="Next page: 输入输出流">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"泛型(generics)","level":"1.3.3","depth":2,"next":{"title":"输入输出流","level":"1.3.4","depth":2,"path":"advanced/IO.md","ref":"advanced/IO.md","articles":[]},"previous":{"title":"集合框架和泛型","level":"1.3.2","depth":2,"path":"advanced/collection.md","ref":"advanced/collection.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","prism","prism-themes","-livereload","search-plus","splitter","copy-code-button","todo","anchor-navigation-ex","anchors","expandable-chapters","-toggle-chapters"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-atom-dark.css"]},"todo":{},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"prism-themes":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"WodahsOrez","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"第一本GitBook","language":"zh-hans","links":{"sidebar":{"Home":"http://###"}},"gitbook":"3.2.3","description":"Typora的使用"},"file":{"path":"advanced/generics.md","mtime":"2019-03-10T07:35:11.261Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-17T14:03:49.445Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

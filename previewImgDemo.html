@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>上传图片预览</title>
+</head>
+<style>
+.imglabel{
+	width: 200px;
+	height: 120px;
+	line-height: 120px;
+	text-align: center;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	background-color: #f8f8f8; 
+	cursor: pointer;
+	display: block;
+	margin: 8px;
+}
+
+.imgdiv{
+	position: relative;
+	width: 200px;
+	height: 120px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	display: none;
+	margin: 8px;
+}
+
+.imgdiv img{
+	width: 100%;
+	height: 100%;
+}
+
+.imgdiv span{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: #fff;
+	background-color: #000;
+	opacity: 0.5;
+}
+
+.imgdiv label{
+	display: inline-block;
+	width: 48%;
+	text-align: center;
+	cursor: pointer;
+}
+</style>
+<body>
+	
+	<label class="imglabel" id="imglabel1" for="file1">+ 添加正面（人像面）</label>
+	<div class="imgdiv" id="imgdiv1">
+		<img class="img" id="img1">
+		<span>
+		<label  for="file1">重新选择</label>
+		<label onclick="cancel('file1')">删除</label>
+		</span>
+	</div>
+	<input type="file" id="file1" style="display:none;">
+
+	<label class="imglabel" id="imglabel2" for="file2">+ 添加反面（非人像面）</label>
+	<div class="imgdiv" id="imgdiv2">
+		<img class="img" id="img2">
+		<span>
+		<label  for="file2">重新选择</label>
+		<label onclick="cancel('file2')">删除</label>
+		</span>
+	</div>
+	<input type="file" id="file2" style="display:none;">
+
+</body>
+
+<script>
+// 删除方法，清空并触发onchange
+function cancel(id) {
+	document.getElementById(id).value = "";
+	document.getElementById(id).onchange();
+}
+
+// 切换隐藏方法
+function triggerImg(index){
+	if(document.getElementById('file'+index).value == ""){
+		document.getElementById('imgdiv'+index).style="display:none;"
+		document.getElementById('imglabel'+index).style="display:block;"
+	} else {
+		document.getElementById('imgdiv'+index).style="display:block;"
+		document.getElementById('imglabel'+index).style="display:none;"
+	}
+}
+
+//URL.createObjectURL方式实现
+document.getElementById('file1').onchange = function(){ 
+	triggerImg("1");
+	if(this.value != ""){
+		var file =  this.files[0];
+		document.getElementById('img1').src = URL.createObjectURL(file);
+	}
+}
+
+// FileReader方式实现
+document.getElementById('file2').onchange = function(){ 
+	triggerImg("2");
+	if(this.value != ""){
+		var file =  this.files[0];
+		var reader = new FileReader();
+		// 监听reader对象的的onload事件，当图片加载完成时，把base64编码賦值给预览图片
+		reader.onload = function(event){
+			document.getElementById('img2').src = event.target.result;
+			}
+		// 调用reader.readAsDataURL()方法，把图片转成base64
+		reader.readAsDataURL(file);
+	}
+}
+</script>
+</html>

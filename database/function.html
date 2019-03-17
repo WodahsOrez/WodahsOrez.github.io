@@ -1,0 +1,1433 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>MySQL数据库函数 · 第一本GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="WodahsOrez">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-atom-dark.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="MySQL.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://###" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Java基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../basic/class.html">
+            
+                <a href="../basic/class.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    类，抽象类，接口，多态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../basic/controlStatement.html">
+            
+                <a href="../basic/controlStatement.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    流程控制语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../basic/datatype.html">
+            
+                <a href="../basic/datatype.html">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    数据类型和运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../basic/function.html">
+            
+                <a href="../basic/function.html">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    方法和数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../basic/innerClass.html">
+            
+                <a href="../basic/innerClass.html">
+            
+                    
+                        <b>1.2.5.</b>
+                    
+                    内部类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../basic/modifier.html">
+            
+                <a href="../basic/modifier.html">
+            
+                    
+                        <b>1.2.6.</b>
+                    
+                    修饰符
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                        <b>1.3.</b>
+                    
+                    Java进阶
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../advanced/annotation.html">
+            
+                <a href="../advanced/annotation.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    注解(annotation)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../advanced/collection.html">
+            
+                <a href="../advanced/collection.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    集合框架和泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../advanced/generics.html">
+            
+                <a href="../advanced/generics.html">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    泛型(generics)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../advanced/IO.html">
+            
+                <a href="../advanced/IO.html">
+            
+                    
+                        <b>1.3.4.</b>
+                    
+                    输入输出流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../advanced/string.html">
+            
+                <a href="../advanced/string.html">
+            
+                    
+                        <b>1.3.5.</b>
+                    
+                    String类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../advanced/thread.html">
+            
+                <a href="../advanced/thread.html">
+            
+                    
+                        <b>1.3.6.</b>
+                    
+                    多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../advanced/usefulClass.html">
+            
+                <a href="../advanced/usefulClass.html">
+            
+                    
+                        <b>1.3.7.</b>
+                    
+                    实用类
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                        <b>1.4.</b>
+                    
+                    JavaWeb
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../javaWeb/ELexperssion.html">
+            
+                <a href="../javaWeb/ELexperssion.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    EL(表达式语言)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../javaWeb/JDBC.html">
+            
+                <a href="../javaWeb/JDBC.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    JDBC(Java数据库连接）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../javaWeb/jsp.html">
+            
+                <a href="../javaWeb/jsp.html">
+            
+                    
+                        <b>1.4.3.</b>
+                    
+                    JSP(Java Server Pages)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../javaWeb/JSTL.html">
+            
+                <a href="../javaWeb/JSTL.html">
+            
+                    
+                        <b>1.4.4.</b>
+                    
+                    JSTL(JSP标准标签库)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../javaWeb/Listener&Fiter.html">
+            
+                <a href="../javaWeb/Listener&Fiter.html">
+            
+                    
+                        <b>1.4.5.</b>
+                    
+                    过滤器和监视器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../javaWeb/servlet.html">
+            
+                <a href="../javaWeb/servlet.html">
+            
+                    
+                        <b>1.4.6.</b>
+                    
+                    servlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../javaWeb/xml.html">
+            
+                <a href="../javaWeb/xml.html">
+            
+                    
+                        <b>1.4.7.</b>
+                    
+                    XML
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                        <b>1.5.</b>
+                    
+                    数据库
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.1" data-path="function.html">
+            
+                <a href="function.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    MySQL数据库函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="MySQL.html">
+            
+                <a href="MySQL.html">
+            
+                    
+                        <b>1.5.2.</b>
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="SQL.html">
+            
+                <a href="SQL.html">
+            
+                    
+                        <b>1.5.3.</b>
+                    
+                    结构化查询语言(SQL)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="transaction.html">
+            
+                <a href="transaction.html">
+            
+                    
+                        <b>1.5.4.</b>
+                    
+                    事务Transaction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="Untitled.html">
+            
+                <a href="Untitled.html">
+            
+                    
+                        <b>1.5.5.</b>
+                    
+                    #约束,索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                        <b>1.6.</b>
+                    
+                    设计模式
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../DesignPatterns/designPatterns.html">
+            
+                <a href="../DesignPatterns/designPatterns.html">
+            
+                    
+                        <b>1.6.1.</b>
+                    
+                    概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../DesignPatterns/facade.html">
+            
+                <a href="../DesignPatterns/facade.html">
+            
+                    
+                        <b>1.6.2.</b>
+                    
+                    门面模式(facade)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../DesignPatterns/factory.html">
+            
+                <a href="../DesignPatterns/factory.html">
+            
+                    
+                        <b>1.6.3.</b>
+                    
+                    工厂模式(factory)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../DesignPatterns/flyweight.html">
+            
+                <a href="../DesignPatterns/flyweight.html">
+            
+                    
+                        <b>1.6.4.</b>
+                    
+                    享元模式(flyweight)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../DesignPatterns/interpreter.html">
+            
+                <a href="../DesignPatterns/interpreter.html">
+            
+                    
+                        <b>1.6.5.</b>
+                    
+                    解释器模式(interpreter)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../DesignPatterns/iterator.html">
+            
+                <a href="../DesignPatterns/iterator.html">
+            
+                    
+                        <b>1.6.6.</b>
+                    
+                    迭代器模式(iterator)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../DesignPatterns/mediator.html">
+            
+                <a href="../DesignPatterns/mediator.html">
+            
+                    
+                        <b>1.6.7.</b>
+                    
+                    中介者模式(mediator)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../DesignPatterns/memento.html">
+            
+                <a href="../DesignPatterns/memento.html">
+            
+                    
+                        <b>1.6.8.</b>
+                    
+                    备忘录模式(memento)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../DesignPatterns/observer.html">
+            
+                <a href="../DesignPatterns/observer.html">
+            
+                    
+                        <b>1.6.9.</b>
+                    
+                    观察者模式(observer)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../DesignPatterns/prototype.html">
+            
+                <a href="../DesignPatterns/prototype.html">
+            
+                    
+                        <b>1.6.10.</b>
+                    
+                    原型模式(prototype)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="../DesignPatterns/proxy.html">
+            
+                <a href="../DesignPatterns/proxy.html">
+            
+                    
+                        <b>1.6.11.</b>
+                    
+                    代理模式(proxy)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="../DesignPatterns/singleton.html">
+            
+                <a href="../DesignPatterns/singleton.html">
+            
+                    
+                        <b>1.6.12.</b>
+                    
+                    单例模式(singleton)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="../DesignPatterns/state.html">
+            
+                <a href="../DesignPatterns/state.html">
+            
+                    
+                        <b>1.6.13.</b>
+                    
+                    状态模式(state)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="../DesignPatterns/strategy.html">
+            
+                <a href="../DesignPatterns/strategy.html">
+            
+                    
+                        <b>1.6.14.</b>
+                    
+                    策略模式(strategy)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="../DesignPatterns/template.html">
+            
+                <a href="../DesignPatterns/template.html">
+            
+                    
+                        <b>1.6.15.</b>
+                    
+                    模板方法模式(template)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16" data-path="../DesignPatterns/visitor.html">
+            
+                <a href="../DesignPatterns/visitor.html">
+            
+                    
+                        <b>1.6.16.</b>
+                    
+                    访问者模式(visitor)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.17" data-path="../DesignPatterns/adapter.html">
+            
+                <a href="../DesignPatterns/adapter.html">
+            
+                    
+                        <b>1.6.17.</b>
+                    
+                    适配器模式(adapter)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18" data-path="../DesignPatterns/bridge.html">
+            
+                <a href="../DesignPatterns/bridge.html">
+            
+                    
+                        <b>1.6.18.</b>
+                    
+                    桥梁模式(bridge)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.19" data-path="../DesignPatterns/builder.html">
+            
+                <a href="../DesignPatterns/builder.html">
+            
+                    
+                        <b>1.6.19.</b>
+                    
+                    建造者模式(builder)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.20" data-path="../DesignPatterns/chain.html">
+            
+                <a href="../DesignPatterns/chain.html">
+            
+                    
+                        <b>1.6.20.</b>
+                    
+                    责任链模式(Chain of Responsibility)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.21" data-path="../DesignPatterns/command.html">
+            
+                <a href="../DesignPatterns/command.html">
+            
+                    
+                        <b>1.6.21.</b>
+                    
+                    命令模式(command)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22" data-path="../DesignPatterns/composite.html">
+            
+                <a href="../DesignPatterns/composite.html">
+            
+                    
+                        <b>1.6.22.</b>
+                    
+                    组合模式(composite)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.23" data-path="../DesignPatterns/decorator.html">
+            
+                <a href="../DesignPatterns/decorator.html">
+            
+                    
+                        <b>1.6.23.</b>
+                    
+                    装饰模式(decorator)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                        <b>1.7.</b>
+                    
+                    其他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Typora.html">
+            
+                <a href="../Typora.html">
+            
+                    
+                        <b>1.7.1.</b>
+                    
+                    Typora的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../PreviewImg.html">
+            
+                <a href="../PreviewImg.html">
+            
+                    
+                        <b>1.7.2.</b>
+                    
+                    图片预览总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >MySQL数据库函数</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#mysql&#x6570;&#x636E;&#x5E93;&#x51FD;&#x6570;"><b> </b>MySQL&#x6570;&#x636E;&#x5E93;&#x51FD;&#x6570;</a></li><ul><li><span class="title-icon "></span><a href="#&#x591A;&#x884C;&#x51FD;&#x6570;&#x805A;&#x5408;&#x51FD;&#x6570;"><b>1. </b>&#x591A;&#x884C;&#x51FD;&#x6570;/&#x805A;&#x5408;&#x51FD;&#x6570;</a></li><li><span class="title-icon "></span><a href="#&#x5B57;&#x7B26;&#x4E32;&#x51FD;&#x6570;"><b>2. </b>&#x5B57;&#x7B26;&#x4E32;&#x51FD;&#x6570;</a></li><li><span class="title-icon "></span><a href="#&#x65E5;&#x671F;&#x4E0E;&#x65F6;&#x95F4;&#x51FD;&#x6570;"><b>3. </b>&#x65E5;&#x671F;&#x4E0E;&#x65F6;&#x95F4;&#x51FD;&#x6570;</a></li><li><span class="title-icon "></span><a href="#&#x6570;&#x5B66;&#x51FD;&#x6570;"><b>4. </b>&#x6570;&#x5B66;&#x51FD;&#x6570;</a></li><li><span class="title-icon "></span><a href="#&#x7CFB;&#x7EDF;&#x51FD;&#x6570;"><b>5. </b>&#x7CFB;&#x7EDF;&#x51FD;&#x6570;</a></li><li><span class="title-icon "></span><a href="#&#x5176;&#x4ED6;"><b>6. </b>&#x5176;&#x4ED6;</a></li><ul><li><span class="title-icon "></span><a href="#lastinsertid"><b>6.1. </b>LAST_INSERT_ID()</a></li><li><span class="title-icon "></span><a href="#ifnull&#x5F53;&#x4E3A;null&#x65F6;&#x8FD4;&#x56DE;&#x7ED9;&#x5B9A;&#x503C;"><b>6.2. </b>IFNULL()&#x5F53;&#x4E3A;null&#x65F6;&#x8FD4;&#x56DE;&#x7ED9;&#x5B9A;&#x503C;</a></li></ul></ul></ul></div><a href="#mysql&#x6570;&#x636E;&#x5E93;&#x51FD;&#x6570;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="mysql&#x6570;&#x636E;&#x5E93;&#x51FD;&#x6570;"><a name="mysql&#x6570;&#x636E;&#x5E93;&#x51FD;&#x6570;" class="plugin-anchor" href="#mysql&#x6570;&#x636E;&#x5E93;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="mysql&#x6570;&#x636E;&#x5E93;&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#mysql&#x6570;&#x636E;&#x5E93;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a> MySQL&#x6570;&#x636E;&#x5E93;&#x51FD;&#x6570;</h1>
+<h2 id="&#x591A;&#x884C;&#x51FD;&#x6570;&#x805A;&#x5408;&#x51FD;&#x6570;"><a name="&#x591A;&#x884C;&#x51FD;&#x6570;&#x805A;&#x5408;&#x51FD;&#x6570;" class="plugin-anchor" href="#&#x591A;&#x884C;&#x51FD;&#x6570;&#x805A;&#x5408;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x591A;&#x884C;&#x51FD;&#x6570;&#x805A;&#x5408;&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x591A;&#x884C;&#x51FD;&#x6570;&#x805A;&#x5408;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x591A;&#x884C;&#x51FD;&#x6570;/&#x805A;&#x5408;&#x51FD;&#x6570;</h2>
+<p>&#x5BF9;&#x4E00;&#x7EC4;&#x503C;&#x6267;&#x884C;&#x8BA1;&#x7B97;&#x5E76;&#x8FD4;&#x56DE;&#x5355;&#x4E00;&#x7684;&#x503C;&#x7684;&#x51FD;&#x6570;,&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x5728;where&#x4F7F;&#x7528;</p>
+<table>
+<thead>
+<tr>
+<th>&#x805A;&#x5408;&#x51FD;&#x6570;</th>
+<th>&#x652F;&#x6301;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sum(name)</td>
+<td>&#x6570;&#x5B57;</td>
+<td>&#x5BF9;&#x6307;&#x5B9A;&#x5217;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x975E;&#x7A7A;&#x503C;&#x6C42;&#x548C;</td>
+</tr>
+<tr>
+<td>avg(name)</td>
+<td>&#x6570;&#x5B57;</td>
+<td>&#x5BF9;&#x6307;&#x5B9A;&#x5217;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x975E;&#x7A7A;&#x503C;&#x6C42;&#x5E73;&#x5747;&#x503C;</td>
+</tr>
+<tr>
+<td>min(name)</td>
+<td>&#x6570;&#x5B57;,&#x5B57;&#x7B26;,&#x65E5;&#x671F;</td>
+<td>&#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x5217;&#x7684;&#x6700;&#x5C0F;&#x503C;</td>
+</tr>
+<tr>
+<td>max(name)</td>
+<td>&#x6570;&#x5B57;,&#x5B57;&#x7B26;,&#x65E5;&#x671F;</td>
+<td>&#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x5217;&#x7684;&#x6700;&#x5927;&#x503C;</td>
+</tr>
+<tr>
+<td>count([DISTINCT] name)</td>
+<td>&#x4EFB;&#x610F;&#x57FA;&#x4E8E;&#x884C;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;</td>
+<td>&#x8FD4;&#x56DE;&#x5339;&#x914D;&#x6307;&#x5B9A;&#x5217;&#x7684;&#x975E;&#x7A7A;&#x884C;&#x6570;&#xFF0C;*&#x5305;&#x542B;null&#xFF0C;DISTINCT&#x5B57;&#x6BB5;&#x7EDF;&#x8BA1;&#x4E0D;&#x91CD;&#x590D;&#x8BB0;&#x5F55;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<p> count(expression or null) &#x53EF;&#x4EE5;&#x7EDF;&#x8BA1;&#x5339;&#x914D;expression&#x7684;&#x884C;&#x6570;&#xFF0C;&#x56E0;&#x4E3A;count&#x53EA;&#x5F53;&#x53C2;&#x6570;&#x4E3A;null&#x65F6;&#x4E0D;&#x8BA1;&#x6570;&#xFF0C;&#x5176;&#x4ED6;&#x5305;&#x62EC;false&#x90FD;&#x4F1A;&#x8BA1;&#x6570;&#xFF0C;&#x540C;&#x7406;&#x53EF;&#x4EE5;&#x7528;count(if(expression,1,null))   </p>
+<h2 id="&#x5B57;&#x7B26;&#x4E32;&#x51FD;&#x6570;"><a name="&#x5B57;&#x7B26;&#x4E32;&#x51FD;&#x6570;" class="plugin-anchor" href="#&#x5B57;&#x7B26;&#x4E32;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5B57;&#x7B26;&#x4E32;&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x5B57;&#x7B26;&#x4E32;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x5B57;&#x7B26;&#x4E32;&#x51FD;&#x6570;</h2>
+<table>
+<thead>
+<tr>
+<th>lower(name)/lcase()</th>
+<th>&#x5C0F;&#x5199;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>upper(name)/ucase()</td>
+<td>&#x5927;&#x5199;</td>
+</tr>
+<tr>
+<td>substr(name,off,len)/mid</td>
+<td>&#x622A;&#x53D6;&#x5B57;&#x7B26;&#x4E32;,off&#x662F;&#x7B2C;&#x51E0;&#x4F4D;,len&#x4E3A;&#x622A;&#x51E0;&#x4E2A;</td>
+</tr>
+<tr>
+<td>trim(name)/LTRIM/RTRIM</td>
+<td>&#x53BB;&#x9664;&#x524D;&#x540E;&#x7684;&#x7A7A;&#x683C;,&#x5220;&#x9664;&#x5DE6;/&#x53F3;&#x7684;&#x7A7A;&#x683C;</td>
+</tr>
+<tr>
+<td>trim(s1   from s)</td>
+<td>&#x5220;&#x9664;s&#x5DE6;&#x53F3;&#x4E24;&#x8FB9;&#x7684;s1</td>
+</tr>
+<tr>
+<td>str_to_date(str,pattern)</td>
+<td>&#x5B57;&#x7B26;&#x8F6C;&#x65E5;&#x671F;pattern:%Y-%m-%d %H:%i:%s   &#x9ED8;&#x8BA4;&#x65E5;&#x671F;&#x683C;&#x5F0F;&#x4E3A;:%Y-%m-%d,&#x4F1A;&#x81EA;&#x52A8;&#x8F6C;&#x578B;</td>
+</tr>
+<tr>
+<td>date_format(date,pattern)</td>
+<td>&#x65E5;&#x671F;&#x8F6C;&#x5B57;&#x7B26;</td>
+</tr>
+<tr>
+<td>format(name,num)</td>
+<td>&#x8F6C;&#x6210;&#x5343;&#x4F4D;&#x8868;&#x793A;,num&#x4E3A;&#x5C0F;&#x6570;&#x4F4D;,&#x56DB;&#x820D;&#x4E94;&#x5165;</td>
+</tr>
+<tr>
+<td>ifnull(name,value)</td>
+<td>&#x5C06;null&#x8F6C;&#x6362;&#x4E3A;&#x6307;&#x5B9A;&#x503C;</td>
+</tr>
+<tr>
+<td>char_length(name)</td>
+<td>&#x83B7;&#x53D6;&#x5B57;&#x7B26;&#x4E2A;&#x6570;</td>
+</tr>
+<tr>
+<td>length(name)</td>
+<td>&#x83B7;&#x53D6;&#x5360;&#x7528;&#x5B57;&#x8282;&#x6570;</td>
+</tr>
+<tr>
+<td>concat(s1,s2...)</td>
+<td>&#x8FDE;&#x63A5;&#x591A;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;, mysql&#x7684;concat&#x51FD;&#x6570;&#x62FC;&#x63A5;&#x89C4;&#x5219;&#x662F;   &#x5F53;&#x591A;&#x4E2A;&#x62FC;&#x63A5;&#x7684;&#x5B57;&#x6BB5;&#x7684;&#x5B57;&#x6BB5;&#x503C;&#x4E2D;&#x5B58;&#x5728;null&#x65F6;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x4E00;&#x5B9A;&#x662F; null&#x3002;</td>
+</tr>
+<tr>
+<td>concat_ws(x,s1,s2)</td>
+<td>&#x8FDE;&#x63A5;&#x591A;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x4EE5;x&#x4E3A;&#x5206;&#x9694;&#x7B26;</td>
+</tr>
+<tr>
+<td>insert(s1,x,len,s2)</td>
+<td>&#x5728;s1&#x91CC;&#x4ECE;&#x7B2C;x&#x4E2A;&#x5B57;&#x7B26;&#x5F00;&#x59CB;,len&#x4E2A;&#x5B57;&#x7B26;&#x66FF;&#x6362;&#x6210;s2</td>
+</tr>
+<tr>
+<td>replace(s,s1,s2)</td>
+<td>&#x66FF;&#x6362;s&#x4E2D;&#x6240;&#x6709;&#x7684;s1&#x4E3A;s2</td>
+</tr>
+<tr>
+<td>left(s,len)</td>
+<td>&#x4ECE;&#x5DE6;&#x5F00;&#x59CB;&#x622A;&#x53D6;len&#x4E2A;&#x5B57;&#x7B26;</td>
+</tr>
+<tr>
+<td>right(s,len)</td>
+<td>&#x4ECE;&#x53F3;&#x5F00;&#x59CB;&#x622A;&#x53D6;len&#x4E2A;&#x5B57;&#x7B26;</td>
+</tr>
+<tr>
+<td>repeat(s,len)</td>
+<td>&#x8FD4;&#x56DE;s&#x91CD;&#x590D;len&#x904D;</td>
+</tr>
+<tr>
+<td>LPAD(S,len,s2)</td>
+<td>&#x7528;s2&#x586B;&#x5145;s&#x7684;&#x5DE6;&#x8FB9;&#x77E5;&#x9053;&#x603B;&#x5B57;&#x7B26;&#x4E3A;len</td>
+</tr>
+<tr>
+<td>RPAD(s,len,s2)</td>
+<td>&#x7528;s2&#x586B;&#x5145;s&#x7684;&#x53F3;&#x8FB9;&#x77E5;&#x9053;&#x603B;&#x5B57;&#x7B26;&#x4E3A;len</td>
+</tr>
+<tr>
+<td>elt(n,s1,s2...)</td>
+<td>&#x4ECE;&#x540E;&#x9762;&#x7684;&#x591A;&#x4E2A;&#x5B57;&#x6BB5;&#x4E2D;&#x8FD4;&#x56DE;&#x7B2C;N&#x4E2A;</td>
+</tr>
+<tr>
+<td>field(s,s1,s2..)</td>
+<td>&#x8FD4;&#x56DE;s&#x5728;s1,s2...&#x4E2D;&#x5904;&#x4E8E;&#x7B2C;&#x51E0;&#x4E2A;,&#x65E0;&#x8FD4;&#x56DE;0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x65E5;&#x671F;&#x4E0E;&#x65F6;&#x95F4;&#x51FD;&#x6570;"><a name="&#x65E5;&#x671F;&#x4E0E;&#x65F6;&#x95F4;&#x51FD;&#x6570;" class="plugin-anchor" href="#&#x65E5;&#x671F;&#x4E0E;&#x65F6;&#x95F4;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x65E5;&#x671F;&#x4E0E;&#x65F6;&#x95F4;&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x65E5;&#x671F;&#x4E0E;&#x65F6;&#x95F4;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x65E5;&#x671F;&#x4E0E;&#x65F6;&#x95F4;&#x51FD;&#x6570;</h2>
+<table>
+<thead>
+<tr>
+<th>now()/current_timestamp()   localtime(),sysdate()</th>
+<th>&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>curdate()/current_date()</td>
+<td>&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x7684;&#x65E5;&#x671F;,+0&#x83B7;&#x5F97;20170616&#x7C7B;&#x4F3C;&#x7684;&#x6570;&#x503C;</td>
+</tr>
+<tr>
+<td>curtime()/current_time()</td>
+<td>&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x7684;&#x65F6;&#x95F4;,+0&#x83B7;&#x5F97;&#x65F6;&#x5206;&#x79D2;&#x62FC;&#x63A5;&#x7684;&#x6570;&#x503C;</td>
+</tr>
+<tr>
+<td>month(date)/monthname(date)</td>
+<td>&#x83B7;&#x53D6;&#x6307;&#x5B9A;date&#x7684;&#x6708;&#x4EFD;&#x6216;&#x6708;&#x4EFD;&#x540D;</td>
+</tr>
+<tr>
+<td>dayname(date)</td>
+<td>&#x83B7;&#x53D6;&#x6307;&#x5B9A;date&#x7684;&#x661F;&#x671F;&#x540D;</td>
+</tr>
+<tr>
+<td>dayofweek(date)</td>
+<td>&#x83B7;&#x53D6;&#x6307;&#x5B9A;date&#x5904;&#x4E8E;&#x4E00;&#x5468;&#x7684;&#x7B2C;&#x51E0;&#x5929;(&#x5468;&#x65E5;&#x4E3A;1)</td>
+</tr>
+<tr>
+<td>weekday(date)</td>
+<td>&#x83B7;&#x53D6;&#x6307;&#x5B9A;date&#x5BF9;&#x5E94;&#x7684;&#x661F;&#x671F;&#x51E0;(&#x4E00;~&#x65E5;&#x5BF9;&#x5E94;0~6)</td>
+</tr>
+<tr>
+<td>week(date)</td>
+<td>&#x83B7;&#x53D6;&#x6307;&#x5B9A;date&#x5904;&#x4E8E;&#x4E00;&#x5E74;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;&#x661F;&#x671F;(0~)</td>
+</tr>
+<tr>
+<td>weekofyear(date)</td>
+<td>&#x83B7;&#x53D6;&#x6307;&#x5B9A;date&#x5904;&#x4E8E;&#x4E00;&#x5E74;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;&#x661F;&#x671F;(1~)</td>
+</tr>
+<tr>
+<td>dayofyear(date)</td>
+<td>&#x83B7;&#x53D6;&#x6307;&#x5B9A;date&#x662F;&#x4E00;&#x5E74;&#x7684;&#x7B2C;&#x51E0;&#x5929;(1~)</td>
+</tr>
+<tr>
+<td>dayofmonth(date)</td>
+<td>&#x83B7;&#x53D6;&#x6307;&#x5B9A;date&#x662F;&#x4E00;&#x6708;&#x7684;&#x7B2C;&#x51E0;&#x5929;(1~)</td>
+</tr>
+<tr>
+<td>year(date)</td>
+<td>&#x83B7;&#x53D6;&#x6307;&#x5B9A;date&#x7684;&#x5E74;&#x4EFD;</td>
+</tr>
+<tr>
+<td>quarter(date)</td>
+<td>&#x83B7;&#x53D6;&#x6307;&#x5B9A;date&#x7684;&#x5B63;&#x5EA6;</td>
+</tr>
+<tr>
+<td>hour(date)</td>
+<td>&#x83B7;&#x53D6;&#x6307;&#x5B9A;date&#x7684;&#x5C0F;&#x65F6;</td>
+</tr>
+<tr>
+<td>minute(date)</td>
+<td>&#x83B7;&#x53D6;&#x6307;&#x5B9A;date&#x7684;&#x5206;&#x949F;</td>
+</tr>
+<tr>
+<td>second(date)</td>
+<td>&#x83B7;&#x53D6;&#x6307;&#x5B9A;date&#x7684;&#x79D2;&#x949F;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x6570;&#x5B66;&#x51FD;&#x6570;"><a name="&#x6570;&#x5B66;&#x51FD;&#x6570;" class="plugin-anchor" href="#&#x6570;&#x5B66;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6570;&#x5B66;&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x5B66;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x6570;&#x5B66;&#x51FD;&#x6570;</h2>
+<table>
+<thead>
+<tr>
+<th>ABS(x)</th>
+<th>&#x7EDD;&#x5BF9;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SIGN(X)</td>
+<td>&#x7B26;&#x53F7;&#x51FD;&#x6570;,&#x8FD4;&#x56DE;-1,0,1&#x8868;&#x793A;&#x8D1F;&#x6570;,&#x96F6;,&#x6B63;&#x6570;</td>
+</tr>
+<tr>
+<td>rand()</td>
+<td>&#x751F;&#x6210;0~1&#x7684;&#x968F;&#x673A;&#x6570;,&#x5F00;&#x533A;&#x95F4;</td>
+</tr>
+<tr>
+<td>cell(x)/celling(x)</td>
+<td>&#x8FDB;&#x4E00;</td>
+</tr>
+<tr>
+<td>floor(x)</td>
+<td>&#x53BB;&#x5C3E;</td>
+</tr>
+<tr>
+<td>round(name,num)</td>
+<td>&#x56DB;&#x820D;&#x4E94;&#x5165;,num&#x4E3A;&#x4FDD;&#x7559;&#x51E0;&#x4F4D;&#x5C0F;&#x6570;,&#x53EF;&#x4E3A;&#x8D1F;,&#x4E0D;&#x5199;&#x53D6;&#x6574;</td>
+</tr>
+<tr>
+<td>truncate(name,num)</td>
+<td>&#x4FDD;&#x7559;num&#x4F4D;&#x5C0F;&#x6570;,&#x76F4;&#x63A5;&#x622A;&#x53D6;</td>
+</tr>
+<tr>
+<td>MOD(x,y)</td>
+<td>&#x53D6;&#x6A21;x%y</td>
+</tr>
+<tr>
+<td>POW(X,Y)</td>
+<td>X&#x7684;Y&#x6B21;&#x5E42;</td>
+</tr>
+<tr>
+<td>EXP(x)</td>
+<td>e&#x7684;x&#x6B21;&#x5E42;</td>
+</tr>
+<tr>
+<td>SQRT(X)</td>
+<td>&#x6C42;x&#x7684;&#x5E73;&#x65B9;&#x6839;</td>
+</tr>
+<tr>
+<td>Radians(x)</td>
+<td>x&#x6362;&#x6210;&#x5F27;&#x5EA6;</td>
+</tr>
+<tr>
+<td>degrees(x)</td>
+<td>x&#x6362;&#x6210;&#x89D2;&#x5EA6;</td>
+</tr>
+<tr>
+<td>pi()</td>
+<td>&#x8FD4;&#x56DE;&#x3C0;&#x7684;&#x503C;</td>
+</tr>
+<tr>
+<td>&#x4E09;&#x89D2;&#x51FD;&#x6570;(x)</td>
+<td>&#x4E09;&#x89D2;&#x51FD;&#x6570;:sin,cos,tan,asin,acos,atan,cot</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x7CFB;&#x7EDF;&#x51FD;&#x6570;"><a name="&#x7CFB;&#x7EDF;&#x51FD;&#x6570;" class="plugin-anchor" href="#&#x7CFB;&#x7EDF;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x7CFB;&#x7EDF;&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x7CFB;&#x7EDF;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>5. &#x7CFB;&#x7EDF;&#x51FD;&#x6570;</h2>
+<table>
+<thead>
+<tr>
+<th>version()</th>
+<th>&#x7CFB;&#x7EDF;&#x7248;&#x672C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>connection_id()</td>
+<td>&#x5F53;&#x524D;&#x7528;&#x6237;&#x8FDE;&#x63A5;&#x6570;</td>
+</tr>
+<tr>
+<td>datebase()/schema()</td>
+<td>&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x4F7F;&#x7528;&#x7684;&#x6570;&#x636E;&#x5E93;</td>
+</tr>
+<tr>
+<td>user()/current_user()   system_user()/session_user()</td>
+<td>&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x7528;&#x6237;&#x540D;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x5176;&#x4ED6;"><a name="&#x5176;&#x4ED6;" class="plugin-anchor" href="#&#x5176;&#x4ED6;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5176;&#x4ED6;" class="anchor-navigation-ex-anchor" href="#&#x5176;&#x4ED6;"><i class="fa fa-link" aria-hidden="true"></i></a>6. &#x5176;&#x4ED6;</h2>
+<h3 id="lastinsertid"><a name="lastinsertid" class="plugin-anchor" href="#lastinsertid"><i class="fa fa-link" aria-hidden="true"></i></a><a name="lastinsertid" class="anchor-navigation-ex-anchor" href="#lastinsertid"><i class="fa fa-link" aria-hidden="true"></i></a>6.1. LAST_INSERT_ID()</h3>
+<p>&#x81EA;&#x52A8;&#x8FD4;&#x56DE;&#x6700;&#x540E;&#x4E00;&#x4E2A;INSERT&#x6216; UPDATE &#x64CD;&#x4F5C;&#x4E3A; AUTO_INCREMENT&#x5217;&#x8BBE;&#x7F6E;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53D1;&#x751F;&#x7684;&#x503C;&#x3002;</p>
+<p>&#x5373;&#x4E00;&#x6B21;&#x64CD;&#x4F5C;&#x4EA7;&#x751F;&#x4E86;&#x591A;&#x884C;&#x6570;&#x636E;&#x65F6;,&#x53EA;&#x8FD4;&#x56DE;&#x7B2C;&#x4E00;&#x4E2A;&#x503C;</p>
+<h3 id="ifnull&#x5F53;&#x4E3A;null&#x65F6;&#x8FD4;&#x56DE;&#x7ED9;&#x5B9A;&#x503C;"><a name="ifnull&#x5F53;&#x4E3A;null&#x65F6;&#x8FD4;&#x56DE;&#x7ED9;&#x5B9A;&#x503C;" class="plugin-anchor" href="#ifnull&#x5F53;&#x4E3A;null&#x65F6;&#x8FD4;&#x56DE;&#x7ED9;&#x5B9A;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="ifnull&#x5F53;&#x4E3A;null&#x65F6;&#x8FD4;&#x56DE;&#x7ED9;&#x5B9A;&#x503C;" class="anchor-navigation-ex-anchor" href="#ifnull&#x5F53;&#x4E3A;null&#x65F6;&#x8FD4;&#x56DE;&#x7ED9;&#x5B9A;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a>6.2. IFNULL()&#x5F53;&#x4E3A;null&#x65F6;&#x8FD4;&#x56DE;&#x7ED9;&#x5B9A;&#x503C;</h3>
+<p>IFNULL(expression_1,expression_2);</p>
+<p>&#x5982;&#x679C;expression_1&#x4E0D;&#x4E3A;NULL&#xFF0C;&#x5219;IFNULL&#x51FD;&#x6570;&#x8FD4;&#x56DE;expression_1; &#x5426;&#x5219;&#x8FD4;&#x56DE;expression_2&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="MySQL.html" class="navigation navigation-next navigation-unique" aria-label="Next page: MySQL">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"MySQL数据库函数","level":"1.5.1","depth":2,"next":{"title":"MySQL","level":"1.5.2","depth":2,"path":"database/MySQL.md","ref":"database/MySQL.md","articles":[]},"previous":{"title":"数据库","level":"1.5","depth":1,"ref":"","articles":[{"title":"MySQL数据库函数","level":"1.5.1","depth":2,"path":"database/function.md","ref":"database/function.md","articles":[]},{"title":"MySQL","level":"1.5.2","depth":2,"path":"database/MySQL.md","ref":"database/MySQL.md","articles":[]},{"title":"结构化查询语言(SQL)","level":"1.5.3","depth":2,"path":"database/SQL.md","ref":"database/SQL.md","articles":[]},{"title":"事务Transaction","level":"1.5.4","depth":2,"path":"database/transaction.md","ref":"database/transaction.md","articles":[]},{"title":"#约束,索引","level":"1.5.5","depth":2,"path":"database/Untitled.md","ref":"database/Untitled.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","prism","prism-themes","-livereload","search-plus","splitter","copy-code-button","todo","anchor-navigation-ex","anchors","expandable-chapters","-toggle-chapters"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-atom-dark.css"]},"todo":{},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"prism-themes":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"WodahsOrez","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"第一本GitBook","language":"zh-hans","links":{"sidebar":{"Home":"http://###"}},"gitbook":"3.2.3","description":"Typora的使用"},"file":{"path":"database/function.md","mtime":"2019-03-17T05:14:24.022Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-17T14:03:49.445Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

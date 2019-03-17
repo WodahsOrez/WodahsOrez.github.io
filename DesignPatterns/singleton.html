@@ -1,0 +1,1198 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>单例模式(singleton) · 第一本GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="WodahsOrez">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-atom-dark.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="state.html" />
+    
+    
+    <link rel="prev" href="proxy.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://###" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Java基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../basic/class.html">
+            
+                <a href="../basic/class.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    类，抽象类，接口，多态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../basic/controlStatement.html">
+            
+                <a href="../basic/controlStatement.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    流程控制语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../basic/datatype.html">
+            
+                <a href="../basic/datatype.html">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    数据类型和运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../basic/function.html">
+            
+                <a href="../basic/function.html">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    方法和数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../basic/innerClass.html">
+            
+                <a href="../basic/innerClass.html">
+            
+                    
+                        <b>1.2.5.</b>
+                    
+                    内部类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../basic/modifier.html">
+            
+                <a href="../basic/modifier.html">
+            
+                    
+                        <b>1.2.6.</b>
+                    
+                    修饰符
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                        <b>1.3.</b>
+                    
+                    Java进阶
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../advanced/annotation.html">
+            
+                <a href="../advanced/annotation.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    注解(annotation)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../advanced/collection.html">
+            
+                <a href="../advanced/collection.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    集合框架和泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../advanced/generics.html">
+            
+                <a href="../advanced/generics.html">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    泛型(generics)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../advanced/IO.html">
+            
+                <a href="../advanced/IO.html">
+            
+                    
+                        <b>1.3.4.</b>
+                    
+                    输入输出流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../advanced/string.html">
+            
+                <a href="../advanced/string.html">
+            
+                    
+                        <b>1.3.5.</b>
+                    
+                    String类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../advanced/thread.html">
+            
+                <a href="../advanced/thread.html">
+            
+                    
+                        <b>1.3.6.</b>
+                    
+                    多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../advanced/usefulClass.html">
+            
+                <a href="../advanced/usefulClass.html">
+            
+                    
+                        <b>1.3.7.</b>
+                    
+                    实用类
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                        <b>1.4.</b>
+                    
+                    JavaWeb
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../javaWeb/ELexperssion.html">
+            
+                <a href="../javaWeb/ELexperssion.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    EL(表达式语言)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../javaWeb/JDBC.html">
+            
+                <a href="../javaWeb/JDBC.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    JDBC(Java数据库连接）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../javaWeb/jsp.html">
+            
+                <a href="../javaWeb/jsp.html">
+            
+                    
+                        <b>1.4.3.</b>
+                    
+                    JSP(Java Server Pages)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../javaWeb/JSTL.html">
+            
+                <a href="../javaWeb/JSTL.html">
+            
+                    
+                        <b>1.4.4.</b>
+                    
+                    JSTL(JSP标准标签库)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../javaWeb/Listener&Fiter.html">
+            
+                <a href="../javaWeb/Listener&Fiter.html">
+            
+                    
+                        <b>1.4.5.</b>
+                    
+                    过滤器和监视器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../javaWeb/servlet.html">
+            
+                <a href="../javaWeb/servlet.html">
+            
+                    
+                        <b>1.4.6.</b>
+                    
+                    servlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../javaWeb/xml.html">
+            
+                <a href="../javaWeb/xml.html">
+            
+                    
+                        <b>1.4.7.</b>
+                    
+                    XML
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                        <b>1.5.</b>
+                    
+                    数据库
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../database/function.html">
+            
+                <a href="../database/function.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    MySQL数据库函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../database/MySQL.html">
+            
+                <a href="../database/MySQL.html">
+            
+                    
+                        <b>1.5.2.</b>
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../database/SQL.html">
+            
+                <a href="../database/SQL.html">
+            
+                    
+                        <b>1.5.3.</b>
+                    
+                    结构化查询语言(SQL)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../database/transaction.html">
+            
+                <a href="../database/transaction.html">
+            
+                    
+                        <b>1.5.4.</b>
+                    
+                    事务Transaction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../database/Untitled.html">
+            
+                <a href="../database/Untitled.html">
+            
+                    
+                        <b>1.5.5.</b>
+                    
+                    #约束,索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                        <b>1.6.</b>
+                    
+                    设计模式
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="designPatterns.html">
+            
+                <a href="designPatterns.html">
+            
+                    
+                        <b>1.6.1.</b>
+                    
+                    概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="facade.html">
+            
+                <a href="facade.html">
+            
+                    
+                        <b>1.6.2.</b>
+                    
+                    门面模式(facade)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="factory.html">
+            
+                <a href="factory.html">
+            
+                    
+                        <b>1.6.3.</b>
+                    
+                    工厂模式(factory)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="flyweight.html">
+            
+                <a href="flyweight.html">
+            
+                    
+                        <b>1.6.4.</b>
+                    
+                    享元模式(flyweight)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="interpreter.html">
+            
+                <a href="interpreter.html">
+            
+                    
+                        <b>1.6.5.</b>
+                    
+                    解释器模式(interpreter)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="iterator.html">
+            
+                <a href="iterator.html">
+            
+                    
+                        <b>1.6.6.</b>
+                    
+                    迭代器模式(iterator)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="mediator.html">
+            
+                <a href="mediator.html">
+            
+                    
+                        <b>1.6.7.</b>
+                    
+                    中介者模式(mediator)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="memento.html">
+            
+                <a href="memento.html">
+            
+                    
+                        <b>1.6.8.</b>
+                    
+                    备忘录模式(memento)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="observer.html">
+            
+                <a href="observer.html">
+            
+                    
+                        <b>1.6.9.</b>
+                    
+                    观察者模式(observer)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="prototype.html">
+            
+                <a href="prototype.html">
+            
+                    
+                        <b>1.6.10.</b>
+                    
+                    原型模式(prototype)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="proxy.html">
+            
+                <a href="proxy.html">
+            
+                    
+                        <b>1.6.11.</b>
+                    
+                    代理模式(proxy)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.12" data-path="singleton.html">
+            
+                <a href="singleton.html">
+            
+                    
+                        <b>1.6.12.</b>
+                    
+                    单例模式(singleton)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="state.html">
+            
+                <a href="state.html">
+            
+                    
+                        <b>1.6.13.</b>
+                    
+                    状态模式(state)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="strategy.html">
+            
+                <a href="strategy.html">
+            
+                    
+                        <b>1.6.14.</b>
+                    
+                    策略模式(strategy)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="template.html">
+            
+                <a href="template.html">
+            
+                    
+                        <b>1.6.15.</b>
+                    
+                    模板方法模式(template)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16" data-path="visitor.html">
+            
+                <a href="visitor.html">
+            
+                    
+                        <b>1.6.16.</b>
+                    
+                    访问者模式(visitor)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.17" data-path="adapter.html">
+            
+                <a href="adapter.html">
+            
+                    
+                        <b>1.6.17.</b>
+                    
+                    适配器模式(adapter)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18" data-path="bridge.html">
+            
+                <a href="bridge.html">
+            
+                    
+                        <b>1.6.18.</b>
+                    
+                    桥梁模式(bridge)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.19" data-path="builder.html">
+            
+                <a href="builder.html">
+            
+                    
+                        <b>1.6.19.</b>
+                    
+                    建造者模式(builder)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.20" data-path="chain.html">
+            
+                <a href="chain.html">
+            
+                    
+                        <b>1.6.20.</b>
+                    
+                    责任链模式(Chain of Responsibility)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.21" data-path="command.html">
+            
+                <a href="command.html">
+            
+                    
+                        <b>1.6.21.</b>
+                    
+                    命令模式(command)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22" data-path="composite.html">
+            
+                <a href="composite.html">
+            
+                    
+                        <b>1.6.22.</b>
+                    
+                    组合模式(composite)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.23" data-path="decorator.html">
+            
+                <a href="decorator.html">
+            
+                    
+                        <b>1.6.23.</b>
+                    
+                    装饰模式(decorator)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                        <b>1.7.</b>
+                    
+                    其他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Typora.html">
+            
+                <a href="../Typora.html">
+            
+                    
+                        <b>1.7.1.</b>
+                    
+                    Typora的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../PreviewImg.html">
+            
+                <a href="../PreviewImg.html">
+            
+                    
+                        <b>1.7.2.</b>
+                    
+                    图片预览总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >单例模式(singleton)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x5355;&#x4F8B;&#x6A21;&#x5F0F;singleton"><b> </b>&#x5355;&#x4F8B;&#x6A21;&#x5F0F;(singleton)</a></li><ul><ul><li><span class="title-icon "></span><a href="#&#x997F;&#x6C49;&#x5F0F;-&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x4E0D;&#x7528;&#x8003;&#x8651;&#x540C;&#x6B65;&#x95EE;&#x9898;"><b>1.1. </b>&#x997F;&#x6C49;&#x5F0F; (&#x63A8;&#x8350;&#x4F7F;&#x7528;,&#x4E0D;&#x7528;&#x8003;&#x8651;&#x540C;&#x6B65;&#x95EE;&#x9898;)</a></li><li><span class="title-icon "></span><a href="#&#x61D2;&#x6C49;&#x5F0F;&#x540C;&#x6B65;&#x52A0;synchronized"><b>1.2. </b>&#x61D2;&#x6C49;&#x5F0F;(&#x540C;&#x6B65;&#x52A0;synchronized)</a></li><li><span class="title-icon "></span><a href="#&#x53CC;&#x68C0;&#x9501;&#x53CC;&#x91CD;&#x6821;&#x9A8C;&#x9501;&#xFF08;dcl&#xFF0C;&#x5373;-double-checked-locking&#xFF09;"><b>1.3. </b>&#x53CC;&#x68C0;&#x9501;/&#x53CC;&#x91CD;&#x6821;&#x9A8C;&#x9501;&#xFF08;DCL&#xFF0C;&#x5373; double-checked locking&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x767B;&#x8BB0;&#x5F0F;&#x9759;&#x6001;&#x5185;&#x90E8;&#x7C7B;"><b>1.4. </b>&#x767B;&#x8BB0;&#x5F0F;/&#x9759;&#x6001;&#x5185;&#x90E8;&#x7C7B;</a></li><li><span class="title-icon "></span><a href="#&#x679A;&#x4E3E;"><b>1.5. </b>&#x679A;&#x4E3E;</a></li></ul></ul></ul></div><a href="#&#x5355;&#x4F8B;&#x6A21;&#x5F0F;singleton" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x5355;&#x4F8B;&#x6A21;&#x5F0F;singleton"><a name="&#x5355;&#x4F8B;&#x6A21;&#x5F0F;singleton" class="plugin-anchor" href="#&#x5355;&#x4F8B;&#x6A21;&#x5F0F;singleton"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5355;&#x4F8B;&#x6A21;&#x5F0F;singleton" class="anchor-navigation-ex-anchor" href="#&#x5355;&#x4F8B;&#x6A21;&#x5F0F;singleton"><i class="fa fa-link" aria-hidden="true"></i></a> &#x5355;&#x4F8B;&#x6A21;&#x5F0F;(singleton)</h1>
+<p><strong>&#x5B9A;&#x4E49;</strong>:&#x4FDD;&#x8BC1;&#x4E00;&#x4E2A;&#x7C7B;&#x4EC5;&#x6709;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF0C;&#x800C;&#x4E14;&#x81EA;&#x884C;&#x5B9E;&#x4F8B;&#x5316;&#x5E76;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x8BBF;&#x95EE;&#x5B83;&#x7684;&#x5168;&#x5C40;&#x8BBF;&#x95EE;&#x70B9;&#x3002;</p>
+<p><strong>&#x4E3B;&#x8981;&#x89E3;&#x51B3;</strong>:&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x4F7F;&#x7528;&#x7684;&#x7C7B;&#x9891;&#x7E41;&#x5730;&#x521B;&#x5EFA;&#x4E0E;&#x9500;&#x6BC1;&#x3002;</p>
+<p><strong>&#x5173;&#x952E;&#x4EE3;&#x7801;</strong>:&#x6784;&#x9020;&#x51FD;&#x6570;&#x662F;&#x79C1;&#x6709;&#x7684;&#x3002;</p>
+<p><strong>&#x4F18;&#x70B9;</strong>:&#x51CF;&#x5C11;&#x5185;&#x5B58;&#x5F00;&#x652F;,&#x5BF9;&#x6027;&#x80FD;&#x90FD;&#x5F00;&#x9500;,&#x5728;&#x9700;&#x8981;&#x9891;&#x7E41;&#x521B;&#x5EFA;&#x9500;&#x6BC1;,&#x800C;&#x521B;&#x5EFA;&#x548C;&#x9500;&#x6BC1;&#x7684;&#x6027;&#x80FD;&#x53C8;&#x65E0;&#x6CD5;&#x4F18;&#x5316;&#x7684;&#x65F6;&#x5019;&#x4F7F;&#x7528;.</p>
+<p><strong>&#x7F3A;&#x70B9;</strong>:&#x6269;&#x5C55;&#x56F0;&#x96BE;,&#x4E0D;&#x5229;&#x4E8E;&#x6D4B;&#x8BD5;,&#x4E0E;&#x5355;&#x4E00;&#x804C;&#x8D23;&#x539F;&#x5219;&#x6709;&#x51B2;&#x7A81;.</p>
+<h3 id="&#x997F;&#x6C49;&#x5F0F;-&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x4E0D;&#x7528;&#x8003;&#x8651;&#x540C;&#x6B65;&#x95EE;&#x9898;"><a name="&#x997F;&#x6C49;&#x5F0F;-&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x4E0D;&#x7528;&#x8003;&#x8651;&#x540C;&#x6B65;&#x95EE;&#x9898;" class="plugin-anchor" href="#&#x997F;&#x6C49;&#x5F0F;-&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x4E0D;&#x7528;&#x8003;&#x8651;&#x540C;&#x6B65;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x997F;&#x6C49;&#x5F0F;-&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x4E0D;&#x7528;&#x8003;&#x8651;&#x540C;&#x6B65;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x997F;&#x6C49;&#x5F0F;-&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x4E0D;&#x7528;&#x8003;&#x8651;&#x540C;&#x6B65;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x997F;&#x6C49;&#x5F0F; (&#x63A8;&#x8350;&#x4F7F;&#x7528;,&#x4E0D;&#x7528;&#x8003;&#x8651;&#x540C;&#x6B65;&#x95EE;&#x9898;)</h3>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Singleton</span> <span class="token punctuation">{</span>  
+    <span class="token keyword">private</span> <span class="token keyword">static</span> Singleton instance <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Singleton</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+    <span class="token keyword">private</span> Singleton <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>  
+    <span class="token keyword">public</span> <span class="token keyword">static</span> Singleton <span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+        <span class="token keyword">return</span> instance<span class="token punctuation">;</span>  
+    <span class="token punctuation">}</span>  
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="&#x61D2;&#x6C49;&#x5F0F;&#x540C;&#x6B65;&#x52A0;synchronized"><a name="&#x61D2;&#x6C49;&#x5F0F;&#x540C;&#x6B65;&#x52A0;synchronized" class="plugin-anchor" href="#&#x61D2;&#x6C49;&#x5F0F;&#x540C;&#x6B65;&#x52A0;synchronized"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x61D2;&#x6C49;&#x5F0F;&#x540C;&#x6B65;&#x52A0;synchronized" class="anchor-navigation-ex-anchor" href="#&#x61D2;&#x6C49;&#x5F0F;&#x540C;&#x6B65;&#x52A0;synchronized"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x61D2;&#x6C49;&#x5F0F;(&#x540C;&#x6B65;&#x52A0;synchronized)</h3>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Singleton</span> <span class="token punctuation">{</span>  
+    <span class="token keyword">private</span> <span class="token keyword">static</span> Singleton instance<span class="token punctuation">;</span>  
+    <span class="token keyword">private</span> Singleton <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>  
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">synchronized</span> Singleton <span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>instance <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+            instance <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Singleton</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+        <span class="token punctuation">}</span>  
+        <span class="token keyword">return</span> instance<span class="token punctuation">;</span>  
+    <span class="token punctuation">}</span>  
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="&#x53CC;&#x68C0;&#x9501;&#x53CC;&#x91CD;&#x6821;&#x9A8C;&#x9501;&#xFF08;dcl&#xFF0C;&#x5373;-double-checked-locking&#xFF09;"><a name="&#x53CC;&#x68C0;&#x9501;&#x53CC;&#x91CD;&#x6821;&#x9A8C;&#x9501;&#xFF08;dcl&#xFF0C;&#x5373;-double-checked-locking&#xFF09;" class="plugin-anchor" href="#&#x53CC;&#x68C0;&#x9501;&#x53CC;&#x91CD;&#x6821;&#x9A8C;&#x9501;&#xFF08;dcl&#xFF0C;&#x5373;-double-checked-locking&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x53CC;&#x68C0;&#x9501;&#x53CC;&#x91CD;&#x6821;&#x9A8C;&#x9501;&#xFF08;dcl&#xFF0C;&#x5373;-double-checked-locking&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x53CC;&#x68C0;&#x9501;&#x53CC;&#x91CD;&#x6821;&#x9A8C;&#x9501;&#xFF08;dcl&#xFF0C;&#x5373;-double-checked-locking&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x53CC;&#x68C0;&#x9501;/&#x53CC;&#x91CD;&#x6821;&#x9A8C;&#x9501;&#xFF08;DCL&#xFF0C;&#x5373; double-checked locking&#xFF09;</h3>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Singleton</span> <span class="token punctuation">{</span>  
+    <span class="token keyword">private</span> <span class="token keyword">volatile</span> <span class="token keyword">static</span> Singleton singleton<span class="token punctuation">;</span>  
+    <span class="token keyword">private</span> Singleton <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>  
+    <span class="token keyword">public</span> <span class="token keyword">static</span> Singleton <span class="token function">getSingleton</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>singleton <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+            <span class="token keyword">synchronized</span> <span class="token punctuation">(</span>Singleton<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>singleton <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+                singleton <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Singleton</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+            <span class="token punctuation">}</span>  
+            <span class="token punctuation">}</span>  
+        <span class="token punctuation">}</span>  
+        <span class="token keyword">return</span> singleton<span class="token punctuation">;</span>  
+    <span class="token punctuation">}</span>  
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="&#x767B;&#x8BB0;&#x5F0F;&#x9759;&#x6001;&#x5185;&#x90E8;&#x7C7B;"><a name="&#x767B;&#x8BB0;&#x5F0F;&#x9759;&#x6001;&#x5185;&#x90E8;&#x7C7B;" class="plugin-anchor" href="#&#x767B;&#x8BB0;&#x5F0F;&#x9759;&#x6001;&#x5185;&#x90E8;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x767B;&#x8BB0;&#x5F0F;&#x9759;&#x6001;&#x5185;&#x90E8;&#x7C7B;" class="anchor-navigation-ex-anchor" href="#&#x767B;&#x8BB0;&#x5F0F;&#x9759;&#x6001;&#x5185;&#x90E8;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x767B;&#x8BB0;&#x5F0F;/&#x9759;&#x6001;&#x5185;&#x90E8;&#x7C7B;</h3>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Singleton</span> <span class="token punctuation">{</span>  
+    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">SingletonHolder</span> <span class="token punctuation">{</span>  
+    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">final</span> Singleton INSTANCE <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Singleton</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+    <span class="token punctuation">}</span>  
+    <span class="token keyword">private</span> Singleton <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>  
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> Singleton <span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+    <span class="token keyword">return</span> SingletonHolder<span class="token punctuation">.</span>INSTANCE<span class="token punctuation">;</span>  
+    <span class="token punctuation">}</span>  
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="&#x679A;&#x4E3E;"><a name="&#x679A;&#x4E3E;" class="plugin-anchor" href="#&#x679A;&#x4E3E;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x679A;&#x4E3E;" class="anchor-navigation-ex-anchor" href="#&#x679A;&#x4E3E;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. &#x679A;&#x4E3E;</h3>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">enum</span> Singleton <span class="token punctuation">{</span>  
+    INSTANCE<span class="token punctuation">;</span>  
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">whateverMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+    <span class="token punctuation">}</span>  
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>&#x7ECF;&#x9A8C;&#x4E4B;&#x8C08;</strong>&#xFF1A;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4E0D;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x61D2;&#x6C49;&#x65B9;&#x5F0F;&#xFF0C;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x997F;&#x6C49;&#x65B9;&#x5F0F;&#x3002;&#x53EA;&#x6709;&#x5728;&#x8981;&#x660E;&#x786E;&#x5B9E;&#x73B0; lazy loading &#x6548;&#x679C;&#x65F6;&#xFF0C;&#x624D;&#x4F1A;&#x4F7F;&#x7528;&#x767B;&#x8BB0;&#x65B9;&#x5F0F;&#x3002;&#x5982;&#x679C;&#x6D89;&#x53CA;&#x5230;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;&#x4F7F;&#x7528;&#x679A;&#x4E3E;&#x65B9;&#x5F0F;&#x3002;&#x5982;&#x679C;&#x6709;&#x5176;&#x4ED6;&#x7279;&#x6B8A;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x53EF;&#x4EE5;&#x8003;&#x8651;&#x4F7F;&#x7528;&#x53CC;&#x68C0;&#x9501;&#x65B9;&#x5F0F;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="proxy.html" class="navigation navigation-prev " aria-label="Previous page: 代理模式(proxy)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="state.html" class="navigation navigation-next " aria-label="Next page: 状态模式(state)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"单例模式(singleton)","level":"1.6.12","depth":2,"next":{"title":"状态模式(state)","level":"1.6.13","depth":2,"path":"DesignPatterns/state.md","ref":"DesignPatterns/state.md","articles":[]},"previous":{"title":"代理模式(proxy)","level":"1.6.11","depth":2,"path":"DesignPatterns/proxy.md","ref":"DesignPatterns/proxy.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","prism","prism-themes","-livereload","search-plus","splitter","copy-code-button","todo","anchor-navigation-ex","anchors","expandable-chapters","-toggle-chapters"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-atom-dark.css"]},"todo":{},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"prism-themes":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"WodahsOrez","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"第一本GitBook","language":"zh-hans","links":{"sidebar":{"Home":"http://###"}},"gitbook":"3.2.3","description":"Typora的使用"},"file":{"path":"DesignPatterns/singleton.md","mtime":"2019-03-09T07:24:51.457Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-17T14:03:49.445Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

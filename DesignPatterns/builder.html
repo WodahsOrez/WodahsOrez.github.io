@@ -1,0 +1,1276 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>建造者模式(builder) · 第一本GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="WodahsOrez">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-atom-dark.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chain.html" />
+    
+    
+    <link rel="prev" href="bridge.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://###" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Java基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../basic/class.html">
+            
+                <a href="../basic/class.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    类，抽象类，接口，多态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../basic/controlStatement.html">
+            
+                <a href="../basic/controlStatement.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    流程控制语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../basic/datatype.html">
+            
+                <a href="../basic/datatype.html">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    数据类型和运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../basic/function.html">
+            
+                <a href="../basic/function.html">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    方法和数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../basic/innerClass.html">
+            
+                <a href="../basic/innerClass.html">
+            
+                    
+                        <b>1.2.5.</b>
+                    
+                    内部类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../basic/modifier.html">
+            
+                <a href="../basic/modifier.html">
+            
+                    
+                        <b>1.2.6.</b>
+                    
+                    修饰符
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                        <b>1.3.</b>
+                    
+                    Java进阶
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../advanced/annotation.html">
+            
+                <a href="../advanced/annotation.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    注解(annotation)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../advanced/collection.html">
+            
+                <a href="../advanced/collection.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    集合框架和泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../advanced/generics.html">
+            
+                <a href="../advanced/generics.html">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    泛型(generics)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../advanced/IO.html">
+            
+                <a href="../advanced/IO.html">
+            
+                    
+                        <b>1.3.4.</b>
+                    
+                    输入输出流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../advanced/string.html">
+            
+                <a href="../advanced/string.html">
+            
+                    
+                        <b>1.3.5.</b>
+                    
+                    String类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../advanced/thread.html">
+            
+                <a href="../advanced/thread.html">
+            
+                    
+                        <b>1.3.6.</b>
+                    
+                    多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../advanced/usefulClass.html">
+            
+                <a href="../advanced/usefulClass.html">
+            
+                    
+                        <b>1.3.7.</b>
+                    
+                    实用类
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                        <b>1.4.</b>
+                    
+                    JavaWeb
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../javaWeb/ELexperssion.html">
+            
+                <a href="../javaWeb/ELexperssion.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    EL(表达式语言)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../javaWeb/JDBC.html">
+            
+                <a href="../javaWeb/JDBC.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    JDBC(Java数据库连接）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../javaWeb/jsp.html">
+            
+                <a href="../javaWeb/jsp.html">
+            
+                    
+                        <b>1.4.3.</b>
+                    
+                    JSP(Java Server Pages)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../javaWeb/JSTL.html">
+            
+                <a href="../javaWeb/JSTL.html">
+            
+                    
+                        <b>1.4.4.</b>
+                    
+                    JSTL(JSP标准标签库)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../javaWeb/Listener&Fiter.html">
+            
+                <a href="../javaWeb/Listener&Fiter.html">
+            
+                    
+                        <b>1.4.5.</b>
+                    
+                    过滤器和监视器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../javaWeb/servlet.html">
+            
+                <a href="../javaWeb/servlet.html">
+            
+                    
+                        <b>1.4.6.</b>
+                    
+                    servlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../javaWeb/xml.html">
+            
+                <a href="../javaWeb/xml.html">
+            
+                    
+                        <b>1.4.7.</b>
+                    
+                    XML
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                        <b>1.5.</b>
+                    
+                    数据库
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../database/function.html">
+            
+                <a href="../database/function.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    MySQL数据库函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../database/MySQL.html">
+            
+                <a href="../database/MySQL.html">
+            
+                    
+                        <b>1.5.2.</b>
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../database/SQL.html">
+            
+                <a href="../database/SQL.html">
+            
+                    
+                        <b>1.5.3.</b>
+                    
+                    结构化查询语言(SQL)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../database/transaction.html">
+            
+                <a href="../database/transaction.html">
+            
+                    
+                        <b>1.5.4.</b>
+                    
+                    事务Transaction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../database/Untitled.html">
+            
+                <a href="../database/Untitled.html">
+            
+                    
+                        <b>1.5.5.</b>
+                    
+                    #约束,索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                        <b>1.6.</b>
+                    
+                    设计模式
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="designPatterns.html">
+            
+                <a href="designPatterns.html">
+            
+                    
+                        <b>1.6.1.</b>
+                    
+                    概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="facade.html">
+            
+                <a href="facade.html">
+            
+                    
+                        <b>1.6.2.</b>
+                    
+                    门面模式(facade)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="factory.html">
+            
+                <a href="factory.html">
+            
+                    
+                        <b>1.6.3.</b>
+                    
+                    工厂模式(factory)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="flyweight.html">
+            
+                <a href="flyweight.html">
+            
+                    
+                        <b>1.6.4.</b>
+                    
+                    享元模式(flyweight)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="interpreter.html">
+            
+                <a href="interpreter.html">
+            
+                    
+                        <b>1.6.5.</b>
+                    
+                    解释器模式(interpreter)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="iterator.html">
+            
+                <a href="iterator.html">
+            
+                    
+                        <b>1.6.6.</b>
+                    
+                    迭代器模式(iterator)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="mediator.html">
+            
+                <a href="mediator.html">
+            
+                    
+                        <b>1.6.7.</b>
+                    
+                    中介者模式(mediator)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="memento.html">
+            
+                <a href="memento.html">
+            
+                    
+                        <b>1.6.8.</b>
+                    
+                    备忘录模式(memento)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="observer.html">
+            
+                <a href="observer.html">
+            
+                    
+                        <b>1.6.9.</b>
+                    
+                    观察者模式(observer)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="prototype.html">
+            
+                <a href="prototype.html">
+            
+                    
+                        <b>1.6.10.</b>
+                    
+                    原型模式(prototype)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="proxy.html">
+            
+                <a href="proxy.html">
+            
+                    
+                        <b>1.6.11.</b>
+                    
+                    代理模式(proxy)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="singleton.html">
+            
+                <a href="singleton.html">
+            
+                    
+                        <b>1.6.12.</b>
+                    
+                    单例模式(singleton)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="state.html">
+            
+                <a href="state.html">
+            
+                    
+                        <b>1.6.13.</b>
+                    
+                    状态模式(state)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="strategy.html">
+            
+                <a href="strategy.html">
+            
+                    
+                        <b>1.6.14.</b>
+                    
+                    策略模式(strategy)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="template.html">
+            
+                <a href="template.html">
+            
+                    
+                        <b>1.6.15.</b>
+                    
+                    模板方法模式(template)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16" data-path="visitor.html">
+            
+                <a href="visitor.html">
+            
+                    
+                        <b>1.6.16.</b>
+                    
+                    访问者模式(visitor)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.17" data-path="adapter.html">
+            
+                <a href="adapter.html">
+            
+                    
+                        <b>1.6.17.</b>
+                    
+                    适配器模式(adapter)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18" data-path="bridge.html">
+            
+                <a href="bridge.html">
+            
+                    
+                        <b>1.6.18.</b>
+                    
+                    桥梁模式(bridge)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.19" data-path="builder.html">
+            
+                <a href="builder.html">
+            
+                    
+                        <b>1.6.19.</b>
+                    
+                    建造者模式(builder)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.20" data-path="chain.html">
+            
+                <a href="chain.html">
+            
+                    
+                        <b>1.6.20.</b>
+                    
+                    责任链模式(Chain of Responsibility)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.21" data-path="command.html">
+            
+                <a href="command.html">
+            
+                    
+                        <b>1.6.21.</b>
+                    
+                    命令模式(command)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22" data-path="composite.html">
+            
+                <a href="composite.html">
+            
+                    
+                        <b>1.6.22.</b>
+                    
+                    组合模式(composite)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.23" data-path="decorator.html">
+            
+                <a href="decorator.html">
+            
+                    
+                        <b>1.6.23.</b>
+                    
+                    装饰模式(decorator)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                        <b>1.7.</b>
+                    
+                    其他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Typora.html">
+            
+                <a href="../Typora.html">
+            
+                    
+                        <b>1.7.1.</b>
+                    
+                    Typora的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../PreviewImg.html">
+            
+                <a href="../PreviewImg.html">
+            
+                    
+                        <b>1.7.2.</b>
+                    
+                    图片预览总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >建造者模式(builder)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x5EFA;&#x9020;&#x8005;&#x6A21;&#x5F0F;builder"><b> </b>&#x5EFA;&#x9020;&#x8005;&#x6A21;&#x5F0F;(builder)</a></li><ul><ul><li><span class="title-icon "></span><a href="#&#x89D2;&#x8272;"><b>1.1. </b>&#x89D2;&#x8272;:</a></li><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;&#x573A;&#x666F;"><b>1.2. </b>&#x4F7F;&#x7528;&#x573A;&#x666F;:</a></li><li><span class="title-icon "></span><a href="#&#x5B9E;&#x4F8B;"><b>1.3. </b>&#x5B9E;&#x4F8B;</a></li></ul></ul></ul></div><a href="#&#x5EFA;&#x9020;&#x8005;&#x6A21;&#x5F0F;builder" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x5EFA;&#x9020;&#x8005;&#x6A21;&#x5F0F;builder"><a name="&#x5EFA;&#x9020;&#x8005;&#x6A21;&#x5F0F;builder" class="plugin-anchor" href="#&#x5EFA;&#x9020;&#x8005;&#x6A21;&#x5F0F;builder"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5EFA;&#x9020;&#x8005;&#x6A21;&#x5F0F;builder" class="anchor-navigation-ex-anchor" href="#&#x5EFA;&#x9020;&#x8005;&#x6A21;&#x5F0F;builder"><i class="fa fa-link" aria-hidden="true"></i></a> &#x5EFA;&#x9020;&#x8005;&#x6A21;&#x5F0F;(builder)</h1>
+<p>&#x5B9A;&#x4E49;:&#x8BB2;&#x4E00;&#x4E2A;&#x590D;&#x6742;&#x5BF9;&#x8C61;&#x7684;&#x6784;&#x5EFA;&#x4E0E;&#x5B83;&#x7684;&#x8868;&#x793A;&#x5206;&#x79BB;,&#x4F7F;&#x5F97;&#x540C;&#x6837;&#x7684;&#x6784;&#x5EFA;&#x8FC7;&#x7A0B;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E0D;&#x540C;&#x7684;&#x8868;&#x793A;.
+&#x4F18;&#x70B9;:&#x5C01;&#x88C5;&#x6027;,&#x5BB9;&#x6613;&#x6269;&#x5C55;,&#x4FBF;&#x4E8E;&#x63A7;&#x5236;&#x7EC6;&#x8282;&#x98CE;&#x9669;
+&#x6CE8;&#x610F;:&#x5EFA;&#x9020;&#x8005;&#x6A21;&#x5F0F;&#x5173;&#x6CE8;&#x7684;&#x662F;&#x987A;&#x5E8F;,&#x800C;&#x5DE5;&#x5382;&#x65B9;&#x6CD5;&#x6A21;&#x5F0F;&#x66F4;&#x591A;&#x5173;&#x6CE8;&#x521B;&#x5EFA;.</p>
+<h3 id="&#x89D2;&#x8272;"><a name="&#x89D2;&#x8272;" class="plugin-anchor" href="#&#x89D2;&#x8272;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x89D2;&#x8272;" class="anchor-navigation-ex-anchor" href="#&#x89D2;&#x8272;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x89D2;&#x8272;:</h3>
+<p>&#x4EA7;&#x54C1;&#x7C7B;:&#x901A;&#x5E38;&#x5B9E;&#x73B0;&#x4E86;&#x6A21;&#x677F;&#x65B9;&#x6CD5;&#x6A21;&#x5F0F;.
+&#x62BD;&#x8C61;&#x5EFA;&#x9020;&#x8005;:&#x89C4;&#x8303;&#x4EA7;&#x54C1;&#x7684;&#x7EC4;&#x4EF6;,&#x5373;&#x89C4;&#x8303;&#x4EA7;&#x54C1;&#x5236;&#x9020;&#x7684;&#x6D41;&#x7A0B;&#x7ED3;&#x6784;.
+&#x5177;&#x4F53;&#x5EFA;&#x9020;&#x8005;:&#x5B9E;&#x73B0;&#x62BD;&#x8C61;&#x7C7B;&#x5B9A;&#x4E49;&#x7684;&#x65B9;&#x6CD5;,&#x5E76;&#x4E14;&#x8FD4;&#x56DE;&#x4E00;&#x7EC4;&#x5EFA;&#x597D;&#x7684;&#x5BF9;&#x8C61;.
+&#x5BFC;&#x6F14;&#x7C7B;:&#x8D1F;&#x8D23;&#x5B89;&#x6392;&#x5DF2;&#x6709;&#x6A21;&#x5757;&#x7684;&#x987A;&#x5E8F;,&#x5E76;&#x544A;&#x77E5;&#x5EFA;&#x9020;&#x7C7B;&#x5F00;&#x59CB;&#x5EFA;&#x9020;.</p>
+<h3 id="&#x4F7F;&#x7528;&#x573A;&#x666F;"><a name="&#x4F7F;&#x7528;&#x573A;&#x666F;" class="plugin-anchor" href="#&#x4F7F;&#x7528;&#x573A;&#x666F;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4F7F;&#x7528;&#x573A;&#x666F;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;&#x573A;&#x666F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x4F7F;&#x7528;&#x573A;&#x666F;:</h3>
+<p>1.&#x76F8;&#x540C;&#x65B9;&#x6CD5;,&#x4E0D;&#x540C;&#x6267;&#x884C;&#x987A;&#x5E8F;,&#x4EA7;&#x751F;&#x4E0D;&#x540C;&#x7684;&#x4E8B;&#x4EF6;&#x7ED3;&#x679C;&#x65F6;.
+2.&#x591A;&#x4E2A;&#x90E8;&#x4EF6;&#x6216;&#x96F6;&#x4EF6;&#x90FD;&#x53EF;&#x4EE5;&#x88C5;&#x914D;&#x5230;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4E2D;,&#x4F46;&#x662F;&#x4EA7;&#x751F;&#x7684;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x53C8;&#x4E0D;&#x76F8;&#x540C;&#x65F6;,&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8BE5;&#x7C7B;.
+3.&#x4EA7;&#x54C1;&#x7C7B;&#x975E;&#x5E38;&#x590D;&#x6742;,&#x6216;&#x8005;&#x4EA7;&#x54C1;&#x7C7B;&#x4E2D;&#x7684;&#x8C03;&#x7528;&#x987A;&#x5E8F;&#x4E0D;&#x540C;&#x4EA7;&#x751F;&#x4E86;&#x4E0D;&#x540C;&#x7684;&#x6548;&#x80FD;,&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x4F7F;&#x7528;&#x5EFA;&#x9020;&#x8005;&#x6A21;&#x5F0F;&#x975E;&#x5E38;&#x5408;&#x9002;.</p>
+<h3 id="&#x5B9E;&#x4F8B;"><a name="&#x5B9E;&#x4F8B;" class="plugin-anchor" href="#&#x5B9E;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5B9E;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x5B9E;&#x4F8B;</h3>
+<p><strong>&#x4EA7;&#x54C1;&#x62BD;&#x8C61;&#x7C7B;</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">CarModel</span><span class="token punctuation">{</span>
+    <span class="token keyword">private</span> ArrayList<span class="token generics function"><span class="token punctuation">&lt;</span>String<span class="token punctuation">&gt;</span></span> sequence <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics function"><span class="token punctuation">&lt;</span>String<span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">protected</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//&#x542F;&#x52A8;</span>
+    <span class="token keyword">protected</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">//&#x505C;&#x8F66;</span>
+    <span class="token keyword">protected</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">alarm</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//&#x5587;&#x53ED;</span>
+    <span class="token keyword">protected</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">engineBoom</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//&#x5F15;&#x64CE;</span>
+    <span class="token keyword">final</span> <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span>String tag<span class="token operator">:</span>sequence<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">switch</span><span class="token punctuation">(</span>tag<span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token keyword">case</span> <span class="token string">&quot;start&quot;</span> <span class="token operator">:</span>
+                    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token string">&quot;stop&quot;</span> <span class="token operator">:</span>
+                    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token string">&quot;alarm&quot;</span> <span class="token operator">:</span>
+                    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">alarm</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token string">&quot;engineBoom&quot;</span> <span class="token operator">:</span>
+                    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">engineBoom</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+
+    <span class="token keyword">final</span> <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setSequence</span><span class="token punctuation">(</span>ArrayList<span class="token generics function"><span class="token punctuation">&lt;</span>String<span class="token punctuation">&gt;</span></span> sequence<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>sequence <span class="token operator">=</span> sequence<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>&#x4EA7;&#x54C1;&#x5B9E;&#x73B0;&#x7C7B;</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">BenzModel</span> <span class="token keyword">extends</span> <span class="token class-name">CarModel</span><span class="token punctuation">{</span>
+    <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        system<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x5954;&#x9A70;&#x542F;&#x52A8;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        system<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x5954;&#x9A70;&#x505C;&#x6B62;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">alarm</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        system<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x5954;&#x9A70;&#x5587;&#x53ED;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">engineBoom</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        system<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x5954;&#x9A70;&#x5F15;&#x64CE;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">BMWModel</span> <span class="token keyword">extends</span> <span class="token class-name">CarModel</span><span class="token punctuation">{</span>
+    <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        system<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x5B9D;&#x9A6C;&#x542F;&#x52A8;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        system<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x5B9D;&#x9A6C;&#x505C;&#x6B62;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">alarm</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        system<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x5B9D;&#x9A6C;&#x5587;&#x53ED;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">engineBoom</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        system<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x5B9D;&#x9A6C;&#x5F15;&#x64CE;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>&#x62BD;&#x8C61;&#x5EFA;&#x9020;&#x8005;</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">CarBuilder</span><span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">setSequence</span><span class="token punctuation">(</span>ArrayList<span class="token generics function"><span class="token punctuation">&lt;</span>String<span class="token punctuation">&gt;</span></span> sequence<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">abstract</span> CarModel <span class="token function">getCarModel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>&#x5177;&#x4F53;&#x5EFA;&#x9020;&#x8005;</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> BenzBuilder <span class="token keyword">extends</span> <span class="token class-name">CarBuilder</span><span class="token punctuation">{</span>
+    <span class="token keyword">private</span> BenzModel benz<span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BenzModel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> CarModel <span class="token function">getCarModel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>benz<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setSequence</span><span class="token punctuation">(</span>ArrayList<span class="token generics function"><span class="token punctuation">&lt;</span>String<span class="token punctuation">&gt;</span></span> sequence<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        benz<span class="token punctuation">.</span><span class="token function">setSequence</span><span class="token punctuation">(</span>sequence<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> BMWBuilder <span class="token keyword">extends</span> <span class="token class-name">CarBuilder</span><span class="token punctuation">{</span>
+    <span class="token keyword">private</span> BMWModel bmw<span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BMWModel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> CarModel <span class="token function">getCarModel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>bmw<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setSequence</span><span class="token punctuation">(</span>ArrayList<span class="token generics function"><span class="token punctuation">&lt;</span>String<span class="token punctuation">&gt;</span></span> sequence<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>bmw<span class="token punctuation">.</span><span class="token function">setSequence</span><span class="token punctuation">(</span>sequence<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>&#x5BFC;&#x6F14;&#x7C7B;</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Director</span><span class="token punctuation">{</span>
+    <span class="token keyword">private</span> ArrayList<span class="token generics function"><span class="token punctuation">&lt;</span>String<span class="token punctuation">&gt;</span></span> sequence <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics function"><span class="token punctuation">&lt;</span>String<span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">private</span> BenzBuilder benzBuilder <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BenzBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">private</span> BMWBuilder bmwBuilder <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BMWBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> BenzModel <span class="token function">getABenzModel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>sequence<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>sequence<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;start&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>sequence<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;stop&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>benzBuilder<span class="token punctuation">.</span><span class="token function">setSequence</span><span class="token punctuation">(</span>sequence<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token punctuation">(</span>BenzModel<span class="token punctuation">)</span><span class="token keyword">this</span><span class="token punctuation">.</span>benzBuilder<span class="token punctuation">.</span><span class="token function">getCarModel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+        <span class="token keyword">public</span> BenzModel <span class="token function">getBBenzModel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>sequence<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>sequence<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;engineBoom&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>sequence<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;start&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>sequence<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;stop&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>benzBuilder<span class="token punctuation">.</span><span class="token function">setSequence</span><span class="token punctuation">(</span>sequence<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token punctuation">(</span>BenzModel<span class="token punctuation">)</span><span class="token keyword">this</span><span class="token punctuation">.</span>benzBuilder<span class="token punctuation">.</span><span class="token function">getCarModel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+        <span class="token keyword">public</span> BMWModel <span class="token function">getCBMWModel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>sequence<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>sequence<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;alarm&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>sequence<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;start&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>sequence<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;stop&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>bmwBuilder<span class="token punctuation">.</span><span class="token function">setSequence</span><span class="token punctuation">(</span>sequence<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token punctuation">(</span>BMWModel<span class="token punctuation">)</span><span class="token keyword">this</span><span class="token punctuation">.</span>bmwBuilder<span class="token punctuation">.</span><span class="token function">getCarModel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+        <span class="token keyword">public</span> BMWModel <span class="token function">getDBMWModel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>sequence<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>sequence<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;start&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>bmwBuilder<span class="token punctuation">.</span><span class="token function">setSequence</span><span class="token punctuation">(</span>sequence<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token punctuation">(</span>BMWModel<span class="token punctuation">)</span><span class="token keyword">this</span><span class="token punctuation">.</span>bmwBuilder<span class="token punctuation">.</span><span class="token function">getCarModel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="bridge.html" class="navigation navigation-prev " aria-label="Previous page: 桥梁模式(bridge)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chain.html" class="navigation navigation-next " aria-label="Next page: 责任链模式(Chain of Responsibility)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"建造者模式(builder)","level":"1.6.19","depth":2,"next":{"title":"责任链模式(Chain of Responsibility)","level":"1.6.20","depth":2,"path":"DesignPatterns/chain.md","ref":"DesignPatterns/chain.md","articles":[]},"previous":{"title":"桥梁模式(bridge)","level":"1.6.18","depth":2,"path":"DesignPatterns/bridge.md","ref":"DesignPatterns/bridge.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","prism","prism-themes","-livereload","search-plus","splitter","copy-code-button","todo","anchor-navigation-ex","anchors","expandable-chapters","-toggle-chapters"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-atom-dark.css"]},"todo":{},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"prism-themes":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"WodahsOrez","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"第一本GitBook","language":"zh-hans","links":{"sidebar":{"Home":"http://###"}},"gitbook":"3.2.3","description":"Typora的使用"},"file":{"path":"DesignPatterns/builder.md","mtime":"2019-03-09T07:24:36.356Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-17T14:03:49.445Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
