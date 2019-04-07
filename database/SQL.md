@@ -202,3 +202,27 @@ All为允许重复，默认不允许，可以用''替代没有值的列
 2. `'ABC%'`：所有以 'ABC'      起头的字串。举例来说，'ABCD' 和 'ABCABC' 都符合这个套式。
 3. `'%XYZ'`：所有以 'XYZ'      结尾的字串。举例来说，'WXYZ' 和 'ZZXYZ' 都符合这个套式。
 4. `'%AN%'`：所有含有 'AN' 这个套式的字串。举例来说，'LOS ANGELES' 和 'SAN FRANCISCO' 都符合这个套式。
+
+## CASE表达式
+
+```mysql
+-- 简单case
+CASE expr
+WHEN expr_value THEN case_value
+WHEN expr_value THEN case_value
+ELSE case_value END
+-- expr 可以是列名，也可以是函数或表达式
+-- expr_value expr表达式的值
+-- case_value expr满足expr_value后，整个case表达式的值
+
+-- case搜索函数
+CASE WHEN expression THEN case_value
+WHEN expression THEN case_value
+ELSE case_value END
+-- expression 条件表达式
+-- case_value expression满足后，整个case表达式的值
+```
+
+使用场景：SELECT后，GROUP BY后，CHECK约束内，SET赋值时“=”后
+
+CASE内可以使用BETWEEN，LIKE，IS NULL，IN，EXISTS等等。
